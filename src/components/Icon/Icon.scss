@@ -1,0 +1,13 @@
+.icon-container {
+  border: 5px solid green;
+  display: inline-block;
+
+  &__link {
+    border: 5px solid red;
+
+  }
+
+  &__image {
+    border: 5px solid yellow;
+  }
+}
