@@ -1,13 +1,26 @@
 .icon-container {
-  border: 5px solid green;
   display: inline-block;
+  width: 20%;
 
-  &__link {
-    border: 5px solid red;
-
+  &:not(:last-child) {
+    margin-right: 2rem;
   }
 
-  &__image {
-    border: 5px solid yellow;
+  &__link {
+    display: inline-block;
+  }
+
+  .image-link {
+    width: 77%;
+  }
+
+  &__iconImage {
+    font-size: 3rem;
+  }
+
+  .image {
+    width: 100%;
+    padding-top: 3px;
+    border-radius: 25%;
   }
 }

@@ -1,6 +1,9 @@
 // =========== REACT IMPORTS ===============
 import React, { Component } from 'react';
 
+// =========== FONT AWESOME ================
+
+
 // =========== STATIC IMPORTS ==============
 import backgroundImg from './static/assets/images/header-hero.jpg';
 
@@ -11,13 +14,13 @@ import './layout/global.scss';
 import Background from './components/Background/Background';
 import Footer from './components/Footer/Footer';
 
+
 export class App extends Component {
   render() {
     return (
       <div>
         <h1>If your feet got cemented, make concrete move!</h1>
         <Background img={backgroundImg} />
-
         <Footer />
       </div>
     );
