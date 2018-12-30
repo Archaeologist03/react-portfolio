@@ -2,13 +2,12 @@
   box-sizing: inherit;
 }
 
-html {
+html,
+body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
 
-body {
   font-size: 62.5%;
   font-family: 'K2D', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
     sans-serif;

@@ -1,21 +1,33 @@
+// Had to add extra class for image(not icons) to style it to be same(simillar) size of icons == .image-link and .image classes.
+
 .icon-container {
   display: inline-block;
   width: 20%;
+  display: flex;
+  align-items: center;
 
   &:not(:last-child) {
-    margin-right: 2rem;
+    margin-right: 1.5rem;
   }
 
   &__link {
+    position: relative;
+    left: 50%;
+    transform: translateX(-15px);
     display: inline-block;
-  }
+    transition: transform 0.5s cubic-bezier(0.26, 1.58, 0.77, -0.2);
 
-  .image-link {
-    width: 77%;
+    &:hover {
+      transform: translateX(-15px) scale(1.5) skewY(5deg) rotateZ(5deg);
+    }
   }
 
   &__iconImage {
-    font-size: 3rem;
+    font-size: 3.3rem;
+  }
+
+  .image-link {
+    width: 65%;
   }
 
   .image {
@@ -23,4 +35,16 @@
     padding-top: 3px;
     border-radius: 25%;
   }
+}
+
+.github-icon {
+  color: rgb(160, 17, 117);
+}
+
+.linkedin-icon {
+  color: rgb(53, 106, 180);
+}
+
+.fcc-icon {
+  color: #006400;
 }
