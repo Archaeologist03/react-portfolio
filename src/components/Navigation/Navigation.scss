@@ -1,0 +1,15 @@
+.navigation-container {
+  border: 1px solid green;
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  width: 65%;
+
+  &__nav-items-container {
+    margin-top: 0.3rem;
+  }
+
+  :not(:last-child) {
+    margin-right: .3rem;
+  }
+}

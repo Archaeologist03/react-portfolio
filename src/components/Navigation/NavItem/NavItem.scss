@@ -1,0 +1,40 @@
+.nav-item {
+  width: 47%;
+  font-size: 3rem;
+  color: green;
+  outline: none;
+  text-decoration: none;
+  transform: rotateY(-7deg);
+  float: right;
+  text-align: center;
+
+  background-color: rgba(168, 0, 140, 0.568);
+  box-shadow: 4px 8px 10px rgba(78, 28, 28, 0.705);
+  border-radius: 5px;
+  border-left: 3px solid rgba(124, 95, 204, 0.836);
+  transform: rotateY(-5deg) rotateZ(1deg);
+  transition: border-left 0.5s, border-bottom 2s, border-right 1s, border-top 3s,
+    box-shadow 0.3s, background-color 0.7s, transform 1.5s;
+
+  &:hover {
+    border-left: 5px solid rgb(200, 248, 144);
+    border-bottom: 5px solid rgb(94, 245, 182);
+    border-right: 5px solid rgb(146, 50, 224);
+    border-top: 5px solid rgb(255, 15, 135);
+
+    box-shadow: 2px 6px 5px rgba(78, 28, 28, 0.705);
+    transform: rotateY(10deg) rotateZ(-1deg);
+    background-color: rgba(255, 0, 153, 0.205);
+  }
+}
+
+.nav-text-span {
+  background-image: linear-gradient(rgb(255, 255, 255), rgb(13, 180, 202));
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.active-nav-item {
+  color: teal;
+  border: 5px solid goldenrod;
+}

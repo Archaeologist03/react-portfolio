@@ -15,6 +15,10 @@ import Background from './components/Background/Background';
 import Footer from './components/Footer/Footer';
 import Logo from './components/Logo/Logo';
 import Home from './containers/Home/Home';
+import Portfolio from './containers/Portfolio/Portfolio';
+import About from './containers/About/About';
+import Navigation from './components/Navigation/Navigation';
+
 
 export class App extends Component {
   render() {
@@ -22,11 +26,16 @@ export class App extends Component {
       <Router>
         <div>
           <Logo />
-          <h1>If your feet got cemented, make concrete move!</h1>
           <Background img={backgroundImg} />
           <Footer />
+          <Navigation />
 
           <Route exact path="/" component={Home} />
+
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/about" component={About} />
+          <h1>If your feet got cemented, make concrete move!</h1>
+          
         </div>
       </Router>
     );
