@@ -12,7 +12,8 @@ function Icon(props) {
           props.iconImg ? 'image-link' : null
         }`}
         href={props.linkUrl}
-        target="blank">
+        target="_blank"
+        rel="noopener noreferrer">
         {props.iconImg ? (
           <img
             className="icon-container__iconImage image"

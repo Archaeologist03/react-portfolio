@@ -1,0 +1,19 @@
+.about-container {
+  border: 2px solid skyblue;
+  color: whitesmoke;
+  font-size: 3rem;
+  position: absolute;
+  // top: 15%;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+  // max-height: 75%;
+  // transform: translateY(-50%);
+  // transition:  transform 1s;
+
+}
+
+.show-about {
+  transform: translateY(0);
+  transition:  transform 1s;
+}

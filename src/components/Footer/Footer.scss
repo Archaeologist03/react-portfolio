@@ -6,6 +6,8 @@
   transform: translateX(-50%);
   display: inline-block;
   width: fit-content;
+  filter: blur(0px);
+  backface-visibility: hidden;
 
   display: flex;
   margin-bottom: 0;

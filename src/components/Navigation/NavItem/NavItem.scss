@@ -1,40 +1,58 @@
 .nav-item {
   width: 47%;
-  font-size: 3rem;
-  color: green;
+  font-size: 2.5rem;
   outline: none;
   text-decoration: none;
-  transform: rotateY(-7deg);
-  float: right;
   text-align: center;
+  float: right;
 
-  background-color: rgba(168, 0, 140, 0.568);
+  background-color: rgba(168, 0, 140, 0.356);
   box-shadow: 4px 8px 10px rgba(78, 28, 28, 0.705);
   border-radius: 5px;
+  border: 5px solid transparent;
   border-left: 3px solid rgba(124, 95, 204, 0.836);
   transform: rotateY(-5deg) rotateZ(1deg);
   transition: border-left 0.5s, border-bottom 2s, border-right 1s, border-top 3s,
     box-shadow 0.3s, background-color 0.7s, transform 1.5s;
 
   &:hover {
-    border-left: 5px solid rgb(200, 248, 144);
-    border-bottom: 5px solid rgb(94, 245, 182);
-    border-right: 5px solid rgb(146, 50, 224);
-    border-top: 5px solid rgb(255, 15, 135);
+    border-left: 5px solid rgba(69, 77, 59, 0.767);
+    border-bottom: 5px solid rgba(60, 87, 76, 0.767);
+    border-right: 5px solid rgba(68, 41, 90, 0.685);
+    border-top: 5px solid rgba(94, 36, 65, 0.747);
 
-    box-shadow: 2px 6px 5px rgba(78, 28, 28, 0.705);
-    transform: rotateY(10deg) rotateZ(-1deg);
-    background-color: rgba(255, 0, 153, 0.205);
+    box-shadow: 2px 4px 5px rgba(167, 55, 55, 0.349);
+
+    transform: rotateY(10deg) rotateZ(-1deg) scale(1.05);
+    background-color: rgba(168, 0, 140, 0.507);
+  }
+
+  &:active {
+    transform: rotateY(10deg) rotateZ(-1deg) scale(1.01);
+    box-shadow: 2px 8px 5px rgba(117, 42, 42, 0.568);
+    background-color: rgba(88, 30, 74, 0.829);
+    transition: border-left 0.5s, border-bottom 2s, border-right 1s, border-top 3s,
+    box-shadow 0.3s, background-color 0.7s, transform 1.5s, background-color 0.3s;
+
   }
 }
 
 .nav-text-span {
-  background-image: linear-gradient(rgb(255, 255, 255), rgb(13, 180, 202));
+  background-image: linear-gradient(
+    rgba(231, 224, 224, 0.89),
+    rgb(21, 171, 190)
+  );
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .active-nav-item {
-  color: teal;
-  border: 5px solid goldenrod;
+  border-left: 5px solid rgb(200, 248, 144);
+  border-bottom: 5px solid rgb(94, 245, 182);
+  border-right: 5px solid rgb(146, 50, 224);
+  border-top: 5px solid rgb(255, 15, 135);
+
+  box-shadow: 2px 6px 5px rgba(167, 55, 55, 0.438);
+  transform: rotateY(10deg) rotateZ(-1deg) scale(1.05);
+  background-color: rgba(255, 51, 173, 0.226);
 }

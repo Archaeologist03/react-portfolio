@@ -1,8 +1,11 @@
 // =========== REACT IMPORTS ===============
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-// =========== FONT AWESOME ================
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
+
+// =========== STYLES ======================
+import './App.scss';
 
 // =========== STATIC IMPORTS ==============
 import backgroundImg from './static/assets/images/header-hero.jpg';
@@ -19,9 +22,10 @@ import Portfolio from './containers/Portfolio/Portfolio';
 import About from './containers/About/About';
 import Navigation from './components/Navigation/Navigation';
 
-
 export class App extends Component {
   render() {
+    console.log('rendered app');
+
     return (
       <Router>
         <div>
@@ -30,12 +34,24 @@ export class App extends Component {
           <Footer />
           <Navigation />
 
-          <Route exact path="/" component={Home} />
+          <Route
+            render={({ location }) => (
+              <TransitionGroup>
+                <CSSTransition
+                  key={location.key}
+                  timeout={1750}
+                  classNames="fade">
+                  <Switch location={location}>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/portfolio" component={Portfolio} />
+                    <Route path="/about" component={About} />
+                  </Switch>
+                </CSSTransition>
+              </TransitionGroup>
+            )}
+          />
 
-          <Route path="/portfolio" component={Portfolio} />
-          <Route path="/about" component={About} />
-          <h1>If your feet got cemented, make concrete move!</h1>
-          
+          {/* <h1>If your feet got cemented, make concrete move!</h1> */}
         </div>
       </Router>
     );
