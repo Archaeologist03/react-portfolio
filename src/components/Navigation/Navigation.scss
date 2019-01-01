@@ -5,6 +5,7 @@
   width: 65%;
   perspective: 85rem;
   perspective-origin: right;
+  z-index: 2;
 
   &__nav-items-container {
     margin-top: 0.3rem;

@@ -22,12 +22,15 @@ import Portfolio from './containers/Portfolio/Portfolio';
 import About from './containers/About/About';
 import Navigation from './components/Navigation/Navigation';
 
+// const supportsHistory = 'pushState' in window.history;
+
+
 export class App extends Component {
   render() {
     console.log('rendered app');
 
     return (
-      <Router>
+      <Router >
         <div>
           <Logo />
           <Background img={backgroundImg} />
@@ -38,9 +41,9 @@ export class App extends Component {
             render={({ location }) => (
               <TransitionGroup>
                 <CSSTransition
-                  key={location.key}
-                  timeout={1750}
-                  classNames="fade">
+                  key={location.pathname}
+                  timeout={2000}
+                  classNames="page">
                   <Switch location={location}>
                     <Route exact path="/" component={Home} />
                     <Route path="/portfolio" component={Portfolio} />

@@ -1,27 +1,39 @@
 .page {
+  height: 100vh;
+  padding-top: 100px;
   position: absolute;
-  top:100px;
-  left: 0;
-  right: 0;
+  top: 0;
+  width: 100%;
+  transition: transform 1s, opacity 3s;
+  border: 5px solid gold;
 }
 
-/* simple - enter transition 300ms, exit 150ms */
-.fade-appear,
-.fade-enter {
-    opacity: 0;
-    z-index: 1;
-}
-.fade-appear-active,
-.fade-enter.fade-enter-active {
-    opacity: 1;
-    transition: opacity 1500ms linear 1250ms;
+.page-enter {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: transform 1s, opacity 3s;
 }
 
-.fade-exit {
-    opacity: 1;
+.page-enter-active {
+  transform: translateY(0);
+  opacity: 1;
+  transition: 2s cubic-bezier(0.4, 1.25, 0.52, -0.27);
 }
 
-.fade-exit.fade-exit-active {
-    opacity: 0;
-    transition: opacity 1250ms linear;
+.page-exit {
+  transform: translateY(-100%);
+  opacity: 0;
+  transition: 1s cubic-bezier(0.4, 1.25, 0.52, -0.27);
+}
+
+.page--prev.page-enter {
+  transform: translateY(-100%);
+}
+
+.page--prev.page-enter-active {
+  transform: translateY(0);
+}
+
+.page--prev.page-exit {
+  transform: translateY(100%);
 }

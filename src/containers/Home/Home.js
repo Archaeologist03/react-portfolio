@@ -2,7 +2,7 @@ import React from 'react'
 
 function Home() {
   return (
-    <div className="page" style={{fontSize: "3rem", border: "2px solid navy"}}>
+    <div className="page">
       HI THERE FROM HOME
     </div>
   )
