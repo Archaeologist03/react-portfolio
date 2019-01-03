@@ -1,0 +1,28 @@
+.skills-container {
+  border: 4px dashed green;
+  display: inline-block;
+
+  .skill-icon {
+    border: 2px solid orange;
+    width: 33.33%;
+  }
+}
+
+.html-icon {
+  color: rgb(133, 13, 13);
+}
+.css-icon {
+  color: rgb(25, 23, 122);
+}
+.javascript-icon {
+  color: rgb(179, 162, 12);
+}
+.npm-icon {
+  color: rgb(124, 0, 0);
+}
+.sass-icon {
+  color: rgb(121, 36, 124);
+}
+.react-icon {
+  color: rgb(28, 58, 189);
+}

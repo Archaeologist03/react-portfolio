@@ -3,6 +3,7 @@ import React from 'react';
 import './Background.scss';
 
 import Particles from './ParticlesBG/ParticlesBG'
+// import SphereGif from '../../containers/Home/SphereGif/SphereGif';
 
 function Background(props) {
   return (
@@ -10,6 +11,7 @@ function Background(props) {
       <img className="background-container__image" src={props.img} alt="background" />
       <div className="background-container__overlay"></div>
       <Particles />
+      {/* <SphereGif /> */}
     </div>
   );
 }
