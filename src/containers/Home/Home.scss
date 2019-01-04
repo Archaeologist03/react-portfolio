@@ -2,10 +2,10 @@
   z-index: -2;
 
   &__skills-container {
-    border: 5px solid red;
     position: absolute;
-    bottom: 20%;
-    // left: 50%;
-    // transform: translateX(-50%);
+    bottom: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
   }
 }
