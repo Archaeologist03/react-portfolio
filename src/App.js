@@ -42,7 +42,7 @@ export class App extends Component {
               <TransitionGroup>
                 <CSSTransition
                   key={location.pathname}
-                  timeout={2000}
+                  timeout={1000}
                   classNames="page">
                   <Switch location={location}>
                     <Route exact path="/" component={Home} />

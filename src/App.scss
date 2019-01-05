@@ -1,39 +1,41 @@
+// ----position has to be fixed - adds scrolling on absolute----
 .page {
   height: 100vh;
   padding-top: 100px;
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
-  transition: transform 1s, opacity 3s;
-  border: 5px solid gold;
+  transition: 1s ease-in-out;
+  // border: 5px solid gold;
 }
 
 .page-enter {
-  transform: translateY(-100%);
+  transform: translateY(-100%) scale(0.9);
   opacity: 0;
-  transition: transform 1s, opacity 3s;
+  // transition: transform 1s, opacity 3s;
 }
 
 .page-enter-active {
-  transform: translateY(0);
+  transform: translateY(0) scale(1);
   opacity: 1;
-  transition: 2s cubic-bezier(0.4, 1.25, 0.52, -0.27);
+  // transition: 2s cubic-bezier(0.4, 1.25, 0.52, -0.27);
 }
 
 .page-exit {
-  transform: translateY(-100%);
-  opacity: 0;
-  transition: 1s cubic-bezier(0.4, 1.25, 0.52, -0.27);
-}
-
-.page--prev.page-enter {
-  transform: translateY(-100%);
-}
-
-.page--prev.page-enter-active {
-  transform: translateY(0);
-}
-
-.page--prev.page-exit {
   transform: translateY(100%);
+  opacity: 0;
+  // transition: transform 1s, opacity 0.3s;
+  // transition: 1s cubic-bezier(0.4, 1.25, 0.52, -0.27);
 }
+
+// .page--prev.page-enter {
+//   transform: translateY(100%);
+// }
+
+// .page--prev.page-enter-active {
+//   transform: translateY(0);
+// }
+
+// .page--prev.page-exit {
+//   transform: translateY(100%);
+// }
