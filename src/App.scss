@@ -2,11 +2,12 @@
 .page {
   height: 100vh;
   padding-top: 100px;
+  padding-bottom: 400px;
   position: fixed;
   top: 0;
   width: 100%;
   transition: 1s ease-in-out;
-  // border: 5px solid gold;
+  border: 5px solid gold;
 }
 
 .page-enter {
