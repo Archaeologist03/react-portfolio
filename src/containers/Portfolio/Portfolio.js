@@ -1,9 +1,13 @@
 import React from 'react'
 
+import ProjectBox from '../../components/ProjectBox/ProjectBox'
+
 function Portfolio() {
   return (
-    <div className="page" style={{fontSize: "3rem"}}>
-      HI FROM PORTFOLIO
+    <div className="portfolio-container page" >
+      <div className="portfolio-container__project-boxes-container">
+        <ProjectBox siteUrl="" githubUrl="" />
+      </div>
     </div>
   )
 }
