@@ -1,5 +1,7 @@
 .about-myself-container {
-  border: 2px solid palevioletred;
+  border: 4px dashed palevioletred;
+  height: 150px;
+  overflow: hidden;
 
   &__text {
     font-size: 1.5rem;
