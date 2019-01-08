@@ -11,5 +11,14 @@ const links = {
 };
 
 
+const  movieSearchSite = "https://movie-search-react.netlify.com/";
+const  movieSearchGithub = "https://github.com/Archaeologist03/react-movie-search"; 
 
-export { links};
+const specificLinks = {
+  movieSearchSite,
+  movieSearchGithub,
+}
+
+
+
+export { links, specificLinks };
