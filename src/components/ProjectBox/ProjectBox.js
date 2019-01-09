@@ -19,14 +19,14 @@ function ProjectBox(props) {
       <div className="project-box-container__icons-container">
         <a href={props.siteUrl} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon
-            className="project-box-container__icons-container--site-icon"
+            className="project-box-container__icons-container--site-icon project-box-icons"
             icon={faGlobe}
             size="5x"
           />
         </a>
         <a href={props.githubUrl} target="_blank" rel="noopener noreferrer">
           <FontAwesomeIcon
-            className="project-box-container__icons-container--github-icon"
+            className="project-box-container__icons-container--github-icon project-box-icons"
             icon={faGithubSquare}
             size="5x"
           />
