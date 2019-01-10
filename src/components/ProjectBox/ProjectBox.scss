@@ -2,9 +2,15 @@
   display: inline-block;
   // width: 200px;
   // height: 200px;
-  border: 2px dashed green;
+  border: 5px dashed green;
   position: relative;
   width: 100%;
+  backface-visibility: hidden;
+
+  &:hover &__image-container {
+    transform: scale(1.05);
+    transition: 1s;
+  }
 
   @media only screen and (min-width: 425px) {
     width: 50%;
@@ -12,6 +18,8 @@
 
   &__image-container {
     border: 3px solid red;
+    overflow: hidden;
+    transition: 1s;
 
     img {
       display: block;
@@ -37,10 +45,16 @@
     background-color: red;
     font-size: 2rem;
 
-    .project-box-icons {
+    &:first-child {
       border: 5px solid green;
-      width: 5rem;
-      height: 5rem;
+      color: green;
+      margin-bottom: 15px;
+    }
+
+    .project-box-icons {
+      // border: 5px solid green;
+      width: 4.5rem;
+      height: 4.5rem;
     }
 
     &--site-icon {
@@ -50,7 +64,6 @@
     &--github-icon {
       border: 2px solid white;
       color: rgb(27, 26, 26);
-
     }
   }
 }
