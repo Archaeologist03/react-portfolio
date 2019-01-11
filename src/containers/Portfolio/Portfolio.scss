@@ -2,7 +2,7 @@
   border: 5px dashed gray;
 
   &__project-boxes-container {
-    border: 5px dashed pink;
+    // border: 5px dashed pink;
     max-height: 65vh;
     max-width: 90%;
     margin: 0 auto;
@@ -10,3 +10,7 @@
     overflow-y: scroll;
   }
 }
+
+
+
+// Add another container for everthing that will have border-radius and overflow to hidden, while most outer container does have overflow-y to scroll.

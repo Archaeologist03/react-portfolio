@@ -1,13 +1,20 @@
+@import '../../scss//abstracts/variables';
+
 .project-box-container {
   display: inline-block;
   // width: 200px;
   // height: 200px;
-  border: 5px dashed green;
+  // border: 5px dashed green;
   position: relative;
   width: 100%;
   backface-visibility: hidden;
 
   &:hover &__image-container {
+    transform: scale(0.95);
+    transition: 1s;
+  }
+
+  &:hover .project-box-icons {
     transform: scale(1.05);
     transition: 1s;
   }
@@ -17,7 +24,7 @@
   }
 
   &__image-container {
-    border: 3px solid red;
+    // border: 3px solid red;
     overflow: hidden;
     transition: 1s;
 
@@ -42,28 +49,27 @@
     bottom: 5rem;
     left: 100%;
     transform: translate(-100%, -0%);
-    background-color: red;
     font-size: 2rem;
 
-    &:first-child {
-      border: 5px solid green;
-      color: green;
-      margin-bottom: 15px;
-    }
+
 
     .project-box-icons {
       // border: 5px solid green;
       width: 4.5rem;
       height: 4.5rem;
+      transition: 1s;
+
+      &:hover {
+        transform: scale(1.15);
+      }
     }
 
     &--site-icon {
-      border: 2px solid white;
-      color: rgb(52, 52, 212);
+      color: $site-icon-color;
+      margin-bottom: 5px;
     }
     &--github-icon {
-      border: 2px solid white;
-      color: rgb(27, 26, 26);
+      color: $github-icon-color;
     }
   }
 }

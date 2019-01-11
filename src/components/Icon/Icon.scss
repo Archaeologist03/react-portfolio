@@ -1,5 +1,7 @@
 // Had to add extra class for image(not icons) to style it to be same(simillar) size of icons == .image-link and .image classes.
 
+@import '../../scss//abstracts/variables';
+
 .icon-container {
   display: inline-block;
   width: 20%;
@@ -38,13 +40,13 @@
 }
 
 .github-icon {
-  color: rgb(160, 17, 117);
+  color: $github-icon-color;
 }
 
 .linkedin-icon {
-  color: rgb(53, 106, 180);
+  color: $linkedin-icon-color;
 }
 
 .fcc-icon {
-  color: #006400;
+  color: $fcc-icon-color;
 }
