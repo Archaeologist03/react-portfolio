@@ -1,13 +1,21 @@
 .portfolio-container {
-  border: 5px dashed gray;
+  // border: 5px dashed gray;
+
+
 
   &__project-boxes-container {
     // border: 5px dashed pink;
+    box-shadow: 0 0 35px;
+    border-radius: 3%;
+    height: 65vh;
     max-height: 65vh;
     max-width: 90%;
     margin: 0 auto;
     overflow: hidden;
     overflow-y: scroll;
+    border-bottom: 2px solid rgba(255, 0, 0, 0.808);
+    border-top: 2px solid rgba(255, 0, 0, 0.808);
+
   }
 }
 

@@ -14,7 +14,7 @@ function ProjectBox(props) {
         <img src={props.img} alt="" />
       </div>
       <div className="project-box-container__project-text-container">
-        <p>Some text baut project</p>
+        <p className="project-box-container__project-text-container__text">Some text baut project</p>
       </div>
       <div className="project-box-container__icons-container">
         <a href={props.siteUrl} target="_blank" rel="noopener noreferrer">
