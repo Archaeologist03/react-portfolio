@@ -27,9 +27,11 @@ class About extends React.Component {
   render() {
     return (
       <div className={`about-container page`}>
-        <AboutMyself />
-        <ContactInfo />
-        <Resume />
+        <div className="about-container__info-container">
+          <AboutMyself />
+          <ContactInfo />
+          <Resume />
+        </div>
       </div>
     );
   }

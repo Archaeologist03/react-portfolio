@@ -1,5 +1,5 @@
 .about-container {
-  border: 2px solid skyblue;
+  // border: 2px solid skyblue;
   color: whitesmoke;
   font-size: 3rem;
   position: fixed;
@@ -12,5 +12,12 @@
   // transform: translateY(-50%);
   // transition:  transform 1s;
 
+  &__info-container {
+    border: 2px solid teal;
+    width: 95%;
+    // height: 70vh;
+    margin: 0 auto;
+
+  }
 }
 

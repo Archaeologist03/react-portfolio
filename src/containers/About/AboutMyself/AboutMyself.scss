@@ -1,9 +1,18 @@
 .about-myself-container {
   border: 4px dashed palevioletred;
-  height: 150px;
-  overflow: hidden;
+  // overflow: hidden;
+  margin: 2px;
 
   &__text {
-    font-size: 1.5rem;
+    // border: 2px solid green;
+    font-size: 2rem;
+    font-weight: 400;
+    margin: 10px;
+    background-image: linear-gradient(
+      rgba(247, 233, 233, 0.973),
+      rgb(105, 183, 194)
+    );
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 }
