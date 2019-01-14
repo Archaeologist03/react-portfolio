@@ -1,3 +1,18 @@
+## To do:
+Add text to potfolio boxes text.
+Add small icons for tech used for specific project in portfolio
+Style About properly. (links, about text).
+Add Resume.
+Add more natural(better) transitions to page transition, as well as for portfolio page transitions.
+Add some extra interactivity by triggering stuff onMouseOver.
+Add subtle hover effect to skills icons.
+
+Add media queries.
+Optimize.. load time..
+
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
