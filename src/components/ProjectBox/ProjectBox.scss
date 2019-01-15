@@ -14,15 +14,22 @@
   overflow: hidden;
   border-radius: 3%;
   backface-visibility: hidden;
+  border-bottom: 2px solid rgba(0, 128, 0, 0.7);
+
 
   &:not(:last-child) {
     margin-bottom: 15%;
-    border-bottom: 2px solid rgba(0, 128, 0, 0.7);
+    // border-bottom: 2px solid rgba(0, 128, 0, 0.7);
   }
 
   &:hover &__image-container {
     transform: scale(0.95);
     box-shadow: 0 0 20px red;
+    transition: transform 1s box-shadow 0s;
+  }
+
+  &:hover &__tech-used-container {
+    transform: scale(0.95);
     transition: 1s;
   }
 
@@ -39,6 +46,22 @@
     }
   }
 
+  &__tech-used-container {
+    border: 3px dashed gainsboro;
+    display: inline-block;
+    position: absolute;
+    top: 3%;
+    right: 3%;
+    display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+    // flex-wrap: wrap;
+    z-index: 1;
+    transition: 1s;
+    backface-visibility: hidden;
+
+  }
+
   &__image-container {
     // border: 3px solid red;
     overflow: hidden;
@@ -46,13 +69,15 @@
     height: 75%;
     border-radius: 3%;
     overflow: hidden;
+    backface-visibility: hidden;
+    filter: blur(0);
+
 
     img {
       display: block;
       width: 100%;
       height: 100%;
       backface-visibility: hidden;
-
     }
   }
 
@@ -96,7 +121,6 @@
     &--github-icon {
       color: $github-icon-color;
       margin-bottom: 15px;
-
     }
   }
 }

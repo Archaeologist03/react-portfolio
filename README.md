@@ -1,15 +1,17 @@
-## To do:
-Add text to potfolio boxes text.
-Add small icons for tech used for specific project in portfolio
-Style About properly. (links, about text).
-Add Resume.
-Add more natural(better) transitions to page transition, as well as for portfolio page transitions.
-Add some extra interactivity by triggering stuff onMouseOver.
-Add subtle hover effect to skills icons.
+### To do:
+Add text to potfolio boxes text.<br/>
+Style About properly. (links, about text).<br/>
+Add Resume.<br/>
+Add more natural(better) transitions to page transition, as well as for portfolio page transitions.<br/>
+Add some extra interactivity by triggering stuff onMouseOver.<br/>
+Add subtle hover effect to skills icons.<br/>
+<br/>
+Add media queries.<br/>
+Optimize.. load time..<br/>
 
-Add media queries.
-Optimize.. load time..
 
+## Partly done:
+Add small icons for tech used for specific project in portfolio <br/>
 
 
 
