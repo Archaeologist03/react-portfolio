@@ -12,12 +12,18 @@
   // transform: translateY(-50%);
   // transition:  transform 1s;
 
+  @media screen and (max-width: 321px) {
+    padding-top: 75px;
+  }
+
   &__info-container {
     border: 2px solid teal;
     width: 95%;
-    // height: 70vh;
+    height: 70vh;
     margin: 0 auto;
+    overflow-y: auto;
 
+    @media screen and (max-width: 301px) {
+    }
   }
 }
-

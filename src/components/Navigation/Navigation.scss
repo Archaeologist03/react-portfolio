@@ -7,17 +7,27 @@
   perspective-origin: right;
   z-index: 2;
 
+
+  @media screen and (max-width: 325px) {
+    width: 75%;
+  }
+  
+  @media screen and (max-width: 275px) {
+    width: 80%;
+  }
+
+
+
   &__nav-items-container {
     margin-top: 0.3rem;
     transform: rotateY(-7deg);
 
-
     :not(:first-child) {
-      margin-right: .4rem;
+      margin-right: 0.4rem;
     }
 
     &::after {
-      content: '';
+      content: "";
       clear: both;
       display: table;
     }

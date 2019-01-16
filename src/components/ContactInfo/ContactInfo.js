@@ -17,7 +17,7 @@ function ContactInfo(props) {
           </a>
         </p>
       </div>
-      <div className="contact-info-container__linkedin-container">
+      {/* <div className="contact-info-container__linkedin-container">
         <span className="label">LinkedIn: </span>
         <a
           href="https://www.linkedin.com/in/ilija-savic-03/"
@@ -26,7 +26,7 @@ function ContactInfo(props) {
           rel="noopener noreferrer">
           https://www.linkedin.com/in/ilija-savic-03/
         </a>
-      </div>
+      </div> */}
     </div>
   );
 }
