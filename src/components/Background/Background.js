@@ -12,7 +12,7 @@ function Background(props) {
           className="background-container__image"
           src={props.img}
           alt="background"
-          height="100%"
+          // height="100%"
         />
       <div className="background-container__overlay" />
       <Particles />

@@ -12,8 +12,8 @@
   // transform: translateY(-50%);
   // transition:  transform 1s;
 
-  @media screen and (max-width: 321px) {
-    padding-top: 75px;
+  @media screen and (max-width: 376px) {
+    padding-top: 95px;
   }
 
   &__info-container {
@@ -23,7 +23,8 @@
     margin: 0 auto;
     overflow-y: auto;
 
-    @media screen and (max-width: 301px) {
+    @media screen and (max-width: 376px) {
+      height: 60vh;
     }
   }
 }
