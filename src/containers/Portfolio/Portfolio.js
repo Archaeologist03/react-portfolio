@@ -43,6 +43,7 @@ function Portfolio() {
             siteUrl={specificLinks.fccPortfolioSite}
             githubUrl={specificLinks.fccPortfolioGithub}
             techUsedProps={fccPortfolioTechUsedProps}
+            projectText={"Some text that needs to be updated.."}
           />
           <ProjectBox
             img={imgs.githubCardImg}

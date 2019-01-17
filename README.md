@@ -1,6 +1,6 @@
 ### To do:
 Add text to potfolio boxes text.<br/>
-Style About properly. (links, about text).<br/>
+Style About properly. (links, about text, Add clickable button with "Send email" text that does exactly that..).<br/>
 Add Resume.<br/>
 Add more natural(better) transitions to page transition, as well as for portfolio page transitions.<br/>
 Add some extra interactivity by triggering stuff onMouseOver.<br/>

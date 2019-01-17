@@ -20,7 +20,7 @@ function ProjectBox(props) {
       </div>
       <div className="project-box-container__project-text-container">
         <p className="project-box-container__project-text-container__text">
-          Some text baut project
+          {props.projectText}
         </p>
       </div>
       <div className="project-box-container__icons-container">
