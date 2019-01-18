@@ -1,0 +1,17 @@
+.resume-container {
+  // border: 2px dashed green;
+  display: inline-block;
+  border-radius: 10%;
+  background-image: linear-gradient(rgb(6, 80, 122), rgb(48, 2, 90));
+  box-shadow: 4px 4px 15px rgba(99, 8, 184, 0.76);
+  
+
+  &__link {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: rgba(236, 230, 230, 0.89);
+    text-shadow: 1px 0px 4px;
+    display: block;
+    padding: 10px;
+  }
+}
