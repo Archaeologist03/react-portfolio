@@ -12,7 +12,7 @@ function ParticlesBG() {
         params={{
           particles: {
             number: {
-              value: 111,
+              value: 11,
               density: {
                 enable: false,
                 value_area: 1000,
@@ -24,7 +24,7 @@ function ParticlesBG() {
             shape: {
               type: ['polygon'],
               stroke: {
-                width: 1,
+                width: 3,
                 color: '#000',
               },
               // polygon: {

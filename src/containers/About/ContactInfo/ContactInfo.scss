@@ -10,15 +10,24 @@
 
   &__email-container {
     // border: 2px solid green;
+    display: inline-block;
+    border-radius: 10%;
+    background-image: linear-gradient(rgba(92, 54, 231, 0.705), rgba(90, 2, 61, 0.63));
+    box-shadow: 2px 4px 8px rgba(99, 8, 184, 0.76);
+    width: 65px;
 
-    &__email {
-      margin: 2px;
+
+    &__link {
+      font-size: 2.5rem;
+      text-decoration: none;
+      text-shadow: 1px 0px 4px;
+      display: block;
+      padding: 10px;
+      color: rgba(14, 167, 255, 0.911);
     }
   }
 
-  &__linkedin-container {
-    border: 2px solid tan;
-  }
+
 }
 
 .label {
