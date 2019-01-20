@@ -6,8 +6,9 @@ function AboutMyself() {
   return (
     <div className="about-myself-container">
       <h4 className="about-myself-container__text">
-        <span className="hello-there">Hello there, I'm Ilija</span>, but
-        everyone calls me Thor..
+        <span className="hello-there">Hello there, I'm Ilija</span>.
+        <br />
+        but everyone calls me Thor..
         <br />
         (No, nobody does that <Emoji text=":/" className="emoji" />, that
         doesn't really happen, ever. <Emoji text=":/" className="emoji" />)

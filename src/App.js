@@ -31,7 +31,7 @@ export class App extends Component {
 
     return (
       <Router >
-        <div>
+        <div className="app-container">
           <Logo />
           <Background img={backgroundImg} />
           <Footer />
