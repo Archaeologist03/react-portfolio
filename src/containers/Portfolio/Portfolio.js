@@ -37,6 +37,8 @@ function Portfolio() {
             siteUrl={specificLinks.movieSearchSite}
             githubUrl={specificLinks.movieSearchGithub}
             techUsedProps={movieSearchTechUsedProps}
+            projectText={"Some text that needs to be updated..about movie seracher"}
+            projectName="Movie Searcher"
           />
           <ProjectBox
             img={imgs.fccPortfolioImg}
@@ -44,12 +46,15 @@ function Portfolio() {
             githubUrl={specificLinks.fccPortfolioGithub}
             techUsedProps={fccPortfolioTechUsedProps}
             projectText={"Some text that needs to be updated.."}
+            projectName="Portfolio"
           />
           <ProjectBox
             img={imgs.githubCardImg}
             siteUrl={specificLinks.githubCardSite}
             githubUrl={specificLinks.githubCardGithub}
             techUsedProps={githubCardTechUsedProps}
+            projectText={"Some text that needs to be updated.."}
+            projectName="Github Card"
           />
         </div>
       </div>

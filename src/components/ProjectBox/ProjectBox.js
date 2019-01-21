@@ -16,6 +16,9 @@ function ProjectBox(props) {
         <TechUsed techUsedProps={props.techUsedProps} size={"4x"} />
       </div>
       <div className="project-box-container__image-container">
+        <div className="project-box-container__image-container__overlay">
+          <h3>{props.projectName}</h3>
+        </div>
         <img src={props.img} alt="" />
       </div>
       <div className="project-box-container__project-text-container">
