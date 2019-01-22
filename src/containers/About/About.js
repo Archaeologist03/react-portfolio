@@ -34,7 +34,7 @@ class About extends React.Component {
         <div className="about-container__info-container">
 
         <div className="about-container__info-container__contacts-container">
-        <div className="about-container__info-container__contact-info-container info-containers">
+          <div className="about-container__info-container__contact-info-container info-containers">
             <ContactInfo />
           </div>
           <div className="about-container__info-container__resume-container info-containers">

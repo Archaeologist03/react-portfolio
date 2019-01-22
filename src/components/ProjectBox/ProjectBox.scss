@@ -30,6 +30,7 @@
     // transition-delay: 1s;
   }
 
+
   &:hover &__tech-used-container {
     transform: scale(0.95);
     transition: 1s cubic-bezier(0.12, 0.41, 0.21, 0.77);
@@ -58,11 +59,12 @@
   }
 
   &__image-container__overlay {
-    // border: 2px solid green;
+    border: 2px solid rgba(217, 226, 217, 0.199);
     position: absolute;
     top: 0;
     left: 0;
     height: 75%;
+    min-height: 75%;
     width: 100%;
     border-radius: 3%;
     // overflow: hidden;
@@ -85,6 +87,7 @@
       display: inline-block;
       margin-top: 20%;
       letter-spacing: 2px;
+      // border: 2px solid red;
 
     }
   }
