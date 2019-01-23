@@ -15,18 +15,18 @@ class About extends React.Component {
     mounted: false,
   };
 
-  componentDidMount() {
-    console.log("ABOUT MOUNTEDs");
-    this.setState({
-      mounted: true,
-    });
-  }
-  componentWillUnmount() {
-    console.log("ABOUT UNMOUNTED");
-    this.setState({
-      mounted: false,
-    });
-  }
+  // componentDidMount() {
+  //   console.log("ABOUT MOUNTEDs");
+  //   this.setState({
+  //     mounted: true,
+  //   });
+  // }
+  // componentWillUnmount() {
+  //   console.log("ABOUT UNMOUNTED");
+  //   this.setState({
+  //     mounted: false,
+  //   });
+  // }
 
   render() {
     return (

@@ -11,9 +11,7 @@ function Interests() {
       <br />
       - Basketball
       <br />
-      - Plotting to take over the world
-      <br />
-      - Can "space videos" be considered as interest?
+      - Can "astrophysics space videos" be considered as an interest?
     </div>
   );
 }

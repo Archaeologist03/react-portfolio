@@ -1,13 +1,7 @@
+@import "../../../scss/abstracts/mixins";
+
 .resume-container {
-  // border: 2px dashed green;
-  display: inline-block;
-  border-radius: 10%;
-  background-image: linear-gradient(
-    rgba(92, 54, 231, 0.801),
-    rgba(90, 2, 14, 0.644)
-  );
-  box-shadow: 2px 4px 8px rgba(99, 8, 184, 0.76);
-  width: 65px;
+  @include contacts-container-box;
 
   @media screen and (min-width: 1100px) {
     transform: scale(1.7);
@@ -18,11 +12,6 @@
   }
 
   &__link {
-    font-size: 2.5rem;
-    text-decoration: none;
-    text-shadow: 1px 0px 4px;
-    display: block;
-    padding: 10px;
-    color: rgba(231, 255, 14, 0.911);
+    @include contacts-icon(rgba(231, 255, 14, 0.911));
   }
 }
