@@ -15,7 +15,7 @@ function ParticlesBG() {
               value: 11,
               density: {
                 enable: false,
-                value_area: 1000,
+                value_area: 555,
               },
             },
             color: {

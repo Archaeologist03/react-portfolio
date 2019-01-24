@@ -6,12 +6,11 @@ function AboutMyself() {
   return (
     <div className="about-myself-container">
       <h4 className="about-myself-container__text">
-        <span className="hello-there">Hello there, I'm Ilija</span>.
+        <span className="hello-there">Hello there, I'm Ilija</span>,
         <br />
         but everyone calls me Zarathustra..
         <br />
-        (No, nobody does that <Emoji text=":/" className="emoji" />, that
-        doesn't really happen, ever. <Emoji text=":/" className="emoji" />)
+        (No.. that doesn't really happen that often.. <Emoji text=":/" className="emoji" />)
         <br />
         <span className="voice-text voice-text--1">
           *ashamed of his poor intro he gonna switch to third person*{" "}
