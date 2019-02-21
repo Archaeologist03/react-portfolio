@@ -1,20 +1,30 @@
-import React from 'react';
+import React from "react";
 
-import './ProjectBox.scss';
+import "./ProjectBox.scss";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import TechUsed from "./TechUsed/TechUsed";
 
-import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
-import { faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
+import { faGlobe } from "@fortawesome/free-solid-svg-icons";
 
 function ProjectBox(props) {
   return (
     <div className="project-box-container">
+      <div className="project-box-container__tech-used-container">
+        <TechUsed techUsedProps={props.techUsedProps} size={"4x"} />
+      </div>
       <div className="project-box-container__image-container">
+        <div className="project-box-container__image-container__overlay">
+          <h3>{props.projectName}</h3>
+        </div>
         <img src={props.img} alt="" />
       </div>
       <div className="project-box-container__project-text-container">
-        <p className="project-box-container__project-text-container__text">Some text baut project</p>
+        <p className="project-box-container__project-text-container__text">
+          {props.projectText}
+        </p>
       </div>
       <div className="project-box-container__icons-container">
         <a href={props.siteUrl} target="_blank" rel="noopener noreferrer">

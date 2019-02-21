@@ -1,18 +1,34 @@
-import React from 'react'
-
-import './AboutMyself.scss';
+import React from "react";
+import Emoji from "react-emoji-render";
+import "./AboutMyself.scss";
 
 function AboutMyself() {
   return (
     <div className="about-myself-container">
       <h4 className="about-myself-container__text">
-       {/* One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections. The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream. */}
-       I am self-taught front-end developer, specifically interested in expanding further and polishing existing knowledge of JavaScript and React.
-       <br />
-        I'm also familiar with back-end technologies such as the nodejs, express, and have basic knowledge of sql and mongoDB databases.
+        <span className="hello-there">Hello there, I'm Ilija</span>,
+        <br />
+        but everyone calls me Zarathustra..
+        <br />
+        (No.. that doesn't really happen that often.. <Emoji text=":/" className="emoji" />)
+        <br />
+        <span className="voice-text voice-text--1">
+          *ashamed of his poor intro he gonna switch to third person*{" "}
+        </span>
+        <br />
+        {/* <span className="voice-text voice-text--2">deeper voice </span> */}
+        <br />
+        He is front-end developer, mainly working with{" "}
+        <span className="about-myself-container__text--bolded">
+          Javascript(React){" "}
+        </span>
+        and <span className="about-myself-container__text--bolded">Sass</span>.
+        But he also has great amount of curiosity towards{" "}
+        <span className="about-myself-container__text--bolded">Python</span>.
+        <br />
       </h4>
     </div>
-  )
+  );
 }
 
-export default AboutMyself
+export default AboutMyself;

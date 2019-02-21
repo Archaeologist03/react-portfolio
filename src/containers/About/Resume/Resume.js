@@ -1,9 +1,16 @@
 import React from 'react';
 
+import './Resume.scss';
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faScroll } from "@fortawesome/free-solid-svg-icons";
+
 function Resume() {
   return (
-    <div style={{ border: '2px dashed green', fontSize: '1.5rem' }}>
-      <h4>RESUME: "SOME RES LINK"</h4>
+    <div className="resume-container">
+      <a  className="resume-container__link" href="#" target="_blank">
+        <FontAwesomeIcon icon={faScroll} />
+      </a>
     </div>
   );
 }

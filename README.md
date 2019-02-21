@@ -1,3 +1,21 @@
+### To do:
+Add text to potfolio boxes text.<br/>
+Style About properly. (links, about text, Add clickable button with "Send email" text that does exactly that..).<br/>
+Add Resume.<br/>
+Add more natural(better) transitions to page transition, as well as for portfolio page transitions.<br/>
+Add some extra interactivity by triggering stuff onMouseOver.<br/>
+Add subtle hover effect to skills icons.<br/>
+Add Modal to project boxes on hover, that shows extra info...<br/>
+<br/>
+Add media queries.<br/>
+Optimize.. load time..<br/>
+
+
+## Partly done:
+Add small icons for tech used for specific project in portfolio <br/>
+
+<br/><br/><br/><br/>
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

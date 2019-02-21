@@ -7,16 +7,32 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
+  // height: calc(100vh - 56px);
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    background: rgba(233, 210, 82, 0.082);
+  }
+
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 4px rgba(224, 192, 49, 0.226);
+    border-radius: 25px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    -webkit-box-shadow: inset 0 0 6px rgba(245, 10, 167, 0.932);
+  }
 
   font-size: 62.5%;
-  font-family: 'K2D', 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+  font-family: "K2D", "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
     sans-serif;
-  cursor: url('../static/assets/images/cursor-small.png'), default;
+  font-family: 'Sarabun', sans-serif;
+  cursor: url("../static/assets/images/cursor-small.png"), default;
 }
 
 a:hover,
 li:hover,
 i:hover {
-  cursor: url('../static//assets//images/cursor-hand.png'), default;
+  cursor: url("../static//assets//images/cursor-hand.png"), default;
 }

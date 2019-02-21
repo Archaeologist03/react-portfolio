@@ -1,6 +1,15 @@
 .portfolio-container {
   // border: 5px dashed gray;
 
+  @media screen and (max-width: 321px) {
+    padding-top: 85px;
+  }
+
+  @media screen and (min-width: 1100px) {
+    padding-top: 125px;
+
+  }
+
   &__project-boxes-container {
     // border: 5px dashed pink;
     box-shadow: 0 0 35px;
@@ -10,12 +19,17 @@
     max-width: 90%;
     margin: 0 auto;
     overflow: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
     border-bottom: 2px solid rgba(199, 15, 174, 0.288);
     border-top: 2px solid rgba(199, 15, 174, 0.329);
     box-shadow: 0px -15px 50px rgba(170, 9, 76, 0.466),
       0px 10px 40px rgba(170, 9, 76, 0.219);
+    padding: 5px 0;
 
+    @media screen and (min-width: 1100px) {
+      height: 55vh;
+
+    }
 
     // Barely seeable border prevents img oveflow out of outer container
     &__project-boxes {

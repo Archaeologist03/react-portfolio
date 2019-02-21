@@ -1,0 +1,26 @@
+@mixin top-bottom-border-container() {
+  border-top: 2px solid rgba(255, 0, 191, 0.205);
+  border-bottom: 2px solid rgba(255, 0, 191, 0.534);
+  border-radius: 5%;
+  box-shadow: 0px 1px 6px rgba(255, 0, 191, 0.062);
+}
+
+@mixin contacts-container-box() {
+  display: inline-block;
+  border-radius: 10%;
+  background-image: linear-gradient(to top,
+    rgba(92, 54, 231, 0.13),
+    rgba(90, 2, 61, 0.336)
+  );
+  box-shadow: 2px 4px 8px rgba(99, 8, 184, 0.76);
+  width: 65px;
+}
+
+@mixin contacts-icon($color) {
+  font-size: 2.5rem;
+  text-decoration: none;
+  text-shadow: 1px 0px 4px;
+  display: block;
+  padding: 10px;
+  color: $color;
+}

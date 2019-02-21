@@ -1,0 +1,17 @@
+@import "../../../scss/abstracts/mixins";
+
+.resume-container {
+  @include contacts-container-box;
+
+  @media screen and (min-width: 1000px) {
+    transform: scale(1.65);
+  }
+
+  @media screen and (min-width: 1360px) {
+    transform: scale(1.5);
+  }
+
+  &__link {
+    @include contacts-icon(rgba(231, 255, 14, 0.911));
+  }
+}

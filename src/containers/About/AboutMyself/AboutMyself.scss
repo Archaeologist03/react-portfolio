@@ -1,18 +1,64 @@
 .about-myself-container {
-  border: 4px dashed palevioletred;
+  // border: 4px dashed palevioletred;
   // overflow: hidden;
-  margin: 2px;
+  // margin: 2px;
+  // padding-bottom: 15px;
+  // position: absolute;
+  // top: 5%;
+  // left: 5%;
+  color: rgb(255,215,0);
+
+  @media screen and (min-width: 1100px) {
+    // width: 40%;
+    // height: 40%;
+    // min-height: 40%;
+  }
 
   &__text {
+  font-family: 'Sarabun', sans-serif;
     // border: 2px solid green;
     font-size: 2rem;
     font-weight: 400;
     margin: 10px;
-    background-image: linear-gradient(
-      rgba(247, 233, 233, 0.973),
-      rgb(105, 183, 194)
-    );
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    // color: rgb(238, 231, 231);
+    text-shadow: 1px 2px 5px rgba(214, 174, 186, 0.534);
+
+    &--bolded {
+      font-weight: 700;
+      color: rgb(243, 40, 50);
+    }
+
+    .hello-there {
+      font-size: 3.3rem;
+      font-weight: 500;
+    }
+
+    .voice-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-style: italic;
+      display: block;
+      margin-top: 7px;
+      background-image: linear-gradient(
+        to right,
+        rgb(248, 248, 248) ,
+        rgb(248, 248, 248) 
+
+      );
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+
+      &--1 {
+        margin-bottom: -30px;
+        margin-top: 10px;
+      }
+      &--2 {
+        margin-bottom: -15px;
+      }
+    }
+
+    .emoji {
+      -webkit-text-fill-color: black;
+      text-shadow: 0 0 0;
+    }
   }
 }
