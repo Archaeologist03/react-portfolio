@@ -1,3 +1,12 @@
+## Setting up:
+
+### `git clone https://github.com/Archaeologist03/react-portfolio`
+### `npm install`
+### `npm start`
+  
+
+
+
 ### To do:
 Add text to potfolio boxes text.<br/>
 Style About properly. (links, about text, Add clickable button with "Send email" text that does exactly that..).<br/>
