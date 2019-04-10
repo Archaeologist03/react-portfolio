@@ -1,21 +1,27 @@
 import React from 'react';
 
+import backgroundHeaderWebp from '../../static/assets/images/webp/header-hero.webp';
+
 import './Background.scss';
 
-import Particles from './ParticlesBG/ParticlesBG';
+// import Particles from './ParticlesBG/ParticlesBG';
 // import SphereGif from '../../containers/Home/SphereGif/SphereGif';
 
 function Background(props) {
   return (
-    <div className="background-container">
+    <div className='background-container'>
+      <picture>
+        <source srcSet={backgroundHeaderWebp} type='image/webp' />
         <img
-          className="background-container__image"
+          className='background-container__image'
           src={props.img}
-          alt="background"
+          alt='background'
           // height="100%"
         />
-      <div className="background-container__overlay" />
-      <Particles />
+      </picture>
+
+      <div className='background-container__overlay' />
+      {/* <Particles /> */}
       {/* <SphereGif /> */}
     </div>
   );

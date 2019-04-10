@@ -1,44 +1,48 @@
-import React from "react";
+import React from 'react';
 
-import "./ProjectBox.scss";
+import './ProjectBox.scss';
 
-import TechUsed from "./TechUsed/TechUsed";
+import TechUsed from './TechUsed/TechUsed';
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
-import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 function ProjectBox(props) {
   return (
-    <div className="project-box-container">
-      <div className="project-box-container__tech-used-container">
-        <TechUsed techUsedProps={props.techUsedProps} size={"4x"} />
+    <div className='project-box-container'>
+      <div className='project-box-container__tech-used-container'>
+        <TechUsed techUsedProps={props.techUsedProps} size={'4x'} />
       </div>
-      <div className="project-box-container__image-container">
-        <div className="project-box-container__image-container__overlay">
+      <div className='project-box-container__image-container'>
+        <div className='project-box-container__image-container__overlay'>
           <h3>{props.projectName}</h3>
         </div>
-        <img src={props.img} alt="" />
+        <picture>
+          <source srcSet={props.webpImg} type='image/webp' />
+          <img src={props.img} alt='' />
+        </picture>
+        <img src={props.img} alt='' />
       </div>
-      <div className="project-box-container__project-text-container">
-        <p className="project-box-container__project-text-container__text">
+      <div className='project-box-container__project-text-container'>
+        <p className='project-box-container__project-text-container__text'>
           {props.projectText}
         </p>
       </div>
-      <div className="project-box-container__icons-container">
-        <a href={props.siteUrl} target="_blank" rel="noopener noreferrer">
+      <div className='project-box-container__icons-container'>
+        <a href={props.siteUrl} target='_blank' rel='noopener noreferrer'>
           <FontAwesomeIcon
-            className="project-box-container__icons-container--site-icon project-box-icons"
+            className='project-box-container__icons-container--site-icon project-box-icons'
             icon={faGlobe}
-            size="5x"
+            size='5x'
           />
         </a>
-        <a href={props.githubUrl} target="_blank" rel="noopener noreferrer">
+        <a href={props.githubUrl} target='_blank' rel='noopener noreferrer'>
           <FontAwesomeIcon
-            className="project-box-container__icons-container--github-icon project-box-icons"
+            className='project-box-container__icons-container--github-icon project-box-icons'
             icon={faGithubSquare}
-            size="5x"
+            size='5x'
           />
         </a>
       </div>

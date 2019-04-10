@@ -1,6 +1,5 @@
 @import '../../../scss/abstracts/variables';
 
-
 .skills-container {
   display: inline-block;
   width: 100%;
@@ -21,8 +20,8 @@
 .javascript-icon {
   color: $javascript-color;
 }
-.npm-icon {
-  color: $npm-color;
+.node-icon {
+  color: $node-color;
 }
 .sass-icon {
   color: $sass-color;
