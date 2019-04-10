@@ -1,17 +1,20 @@
-import React from "react";
+import React from 'react';
 
-import "./Interests.scss";
+import './Interests.scss';
 
 function Interests() {
   return (
-    <div className="interests-container">
-      Hobbies and Interests:
-      <br />
-      - Reading
-      <br />
-      - Basketball
-      <br />
-      - Can "astrophysics space videos" be considered as an interest?
+    <div className='interests-container'>
+      <span className='title'>Hobbies and Interests:</span>
+      <div>
+        {/* <br /> */}
+        <span className='dash'>-</span> Reading
+        <br />
+        <span className='dash'>-</span> Basketball
+        <br />
+        <span className='dash'>-</span> Can sciencey neuro-space-psychology
+        videos be considered as an interest?
+      </div>
     </div>
   );
 }
