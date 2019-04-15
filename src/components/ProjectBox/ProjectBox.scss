@@ -1,4 +1,4 @@
-@import "../../scss//abstracts/variables";
+@import '../../scss//abstracts/variables';
 
 .project-box-container {
   display: inline-block; // *display block in order margin 0 auto to work*
@@ -14,12 +14,16 @@
   overflow: hidden;
   border-radius: 3%;
   backface-visibility: hidden;
-  border-bottom: 2px solid rgba(0, 128, 0, 0.7);
+  border-bottom: 2px solid rgba(0, 128, 0, 0.589);
   // filter: blur(0.3px);
-  // border: 2px solid red;
+  margin-bottom: 12%;
+
+  &:last-child {
+    margin-bottom: 0%;
+  }
 
   &:not(:last-child) {
-    margin-bottom: 15%;
+    // margin-bottom: 15%;
     // border-bottom: 2px solid rgba(0, 128, 0, 0.7);
   }
 
@@ -48,20 +52,17 @@
 
   @media only screen and (min-width: 525px) {
     width: 48%;
+    margin-bottom: 6%;
 
-    &:not(:last-child) {
-      margin-bottom: 5%;
+    &:last-child {
+      margin-bottom: 6%;
     }
   }
 
   @media only screen and (min-width: 1100px) {
     width: 31.3%;
-
-    &:not(:last-child) {
-      margin-bottom: 0%;
-    }
   }
-  
+
   &__image-container__overlay {
     // border: 2px solid rgba(217, 226, 217, 0.199);
     position: absolute;
@@ -101,7 +102,7 @@
     display: inline-block;
     position: absolute;
     top: 3%;
-    right: 3%;
+    right: 15%;
     display: flex;
     flex-direction: row;
     // justify-content: space-between;
@@ -171,5 +172,9 @@
       color: $github-icon-color;
       margin-bottom: 15px;
     }
+  }
+
+  .backend-github-icon {
+    color: $github-backend-icon-color;
   }
 }

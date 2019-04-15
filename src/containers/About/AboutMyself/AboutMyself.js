@@ -34,7 +34,8 @@ function AboutMyself() {
         and <span className='about-myself-container__text--bolded'>Sass</span>{' '}
         on frontend.
         <br />
-        I'm also expanding my knowledge towards backend technologies such as{' '}
+        I'm also highly interested in backend development and currently
+        expanding my knowledge towards backend technologies such as{' '}
         <span className='about-myself-container__text--bolded'>
           NodeJS(Express){' '}
         </span>

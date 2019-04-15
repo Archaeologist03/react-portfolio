@@ -31,6 +31,19 @@ function ProjectBox(props) {
         </p>
       </div>
       <div className='project-box-container__icons-container'>
+        {props.backendGithubUrl ? (
+          <a
+            href={props.backendGithubUrl}
+            target='_blank'
+            rel='noopener noreferrer'>
+            <FontAwesomeIcon
+              className='project-box-container__icons-container--github-icon project-box-icons backend-github-icon'
+              icon={faGithubSquare}
+              size='5x'
+            />
+          </a>
+        ) : null}
+
         <a href={props.siteUrl} target='_blank' rel='noopener noreferrer'>
           <FontAwesomeIcon
             className='project-box-container__icons-container--site-icon project-box-icons'
