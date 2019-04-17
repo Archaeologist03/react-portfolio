@@ -23,7 +23,6 @@ function ProjectBox(props) {
           <source srcSet={props.webpImg} type='image/webp' />
           <img src={props.img} alt='' />
         </picture>
-        <img src={props.img} alt='' />
       </div>
       <div className='project-box-container__project-text-container'>
         <p className='project-box-container__project-text-container__text'>
