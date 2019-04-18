@@ -11,7 +11,7 @@ function Home() {
       <div className='home-container__skills-container'>
         <Skills />
       </div>
-      <header>
+      <header className='home-sphere-container'>
         <SphereGif />
       </header>
     </div>

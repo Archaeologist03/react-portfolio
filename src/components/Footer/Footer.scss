@@ -1,7 +1,7 @@
 .footer-container {
   // border: 2px dashed darkcyan;
   position: absolute;
-  bottom: 2%;
+  bottom: 3%;
   left: 50%;
   transform: translateX(-50%);
   display: inline-block;
@@ -11,5 +11,5 @@
   z-index: 2;
 
   display: flex;
-  margin-bottom: 0;
+  margin-bottom: 5px;
 }

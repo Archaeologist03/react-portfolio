@@ -6,8 +6,10 @@ import ProjectBox from '../../components/ProjectBox/ProjectBox';
 
 import imgs from '../../utils/imgImports';
 
+// === LINKS TO SOCIALS/PROJECTS
 import { specificLinks } from '../../utils/links';
 
+// === ICONS IMPORTS ===
 import {
   faReact,
   faSass,
@@ -17,6 +19,7 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 
+// ==== PROJECT ICONS / USED TECH ====
 const movieSearchTechUsedProps = {
   icons: [faReact, faSass],
   iconsClassNames: ['react', 'sass'],
@@ -47,79 +50,101 @@ const quoteMachineTechUsedProps = {
   iconsClassNames: ['react', 'css'],
 };
 
-function Portfolio() {
-  return (
-    <div className='portfolio-container page'>
-      <div className='portfolio-container__project-boxes-container'>
-        <div className='portfolio-container__project-boxes-container__project-boxes'>
-          <ProjectBox
-            img={imgs.movieSearchImg}
-            webpImg={imgs.webpImgs.movieSearchImgWebp}
-            siteUrl={specificLinks.movieSearchSite}
-            githubUrl={specificLinks.movieSearchGithub}
-            techUsedProps={movieSearchTechUsedProps}
-            projectText={
-              'SPA application that presents more specific data for searched movie.'
-            }
-            projectName='Movie Searcher'
-          />
-          <ProjectBox
-            img={imgs.fccPortfolioImg}
-            webpImg={imgs.webpImgs.fccPortfolioImgWebp}
-            siteUrl={specificLinks.fccPortfolioSite}
-            githubUrl={specificLinks.fccPortfolioGithub}
-            techUsedProps={fccPortfolioTechUsedProps}
-            projectText={
-              'Personal portfolio of mine. This one.'
-            }
-            projectName='Portfolio'
-          />
-          <ProjectBox
-            img={imgs.taskerImg}
-            webpImg={imgs.webpImgs.taskerImgWebp}
-            siteUrl={specificLinks.reactTodoSite}
-            githubUrl={specificLinks.reactTodoGithub}
-            backendGithubUrl={specificLinks.reactTodoGithubBackend}
-            techUsedProps={reactTodoTechUsedProps}
-            projectText={'Full-stack MERN app with basic CRUD operations.'}
-            projectName='Tasker'
-          />
-          <ProjectBox
-            img={imgs.githubCardImg}
-            webpImg={imgs.webpImgs.githubCardImgWebp}
-            siteUrl={specificLinks.githubCardSite}
-            githubUrl={specificLinks.githubCardGithub}
-            techUsedProps={githubCardTechUsedProps}
-            projectText={
-              'Displays searched github user info by fetching github API data.'
-            }
-            projectName='Github Card'
-          />
-          <ProjectBox
-            img={imgs.smartBrainImg}
-            webpImg={imgs.webpImgs.smartBrainImgWebp}
-            siteUrl={specificLinks.smartBrainSite}
-            githubUrl={specificLinks.smartBrainGithub}
-            backendGithubUrl={specificLinks.smartBrainGithubBackend}
-            techUsedProps={smartBrainTechUsedProps}
-            projectText={'Full-stack face recognition application.'}
-            projectName='Smart Brain'
-          />
-          <ProjectBox
-            img={imgs.quoteMachineImg}
-            webpImg={imgs.webpImgs.quoteMachineImgWebp}
-            siteUrl={specificLinks.quoteMachineSite}
-            githubUrl={specificLinks.quoteMachineGithub}
-            techUsedProps={quoteMachineTechUsedProps}
-            projectText={
-              'Uses goodreads API to fetch quotes based on user input.'
-            }
-            projectName='Quote Machine'
-          />
+class Portfolio extends React.Component {
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     mounting: false,
+  //   };
+  // }
+
+  // componentDidUpdate() {
+  //   console.log('port updated');
+  // }
+
+  // componentWillMount() {
+  //   console.log('port will mount');
+  //   this.setState({ mounting: true });
+  // }
+
+  // componentWillUnmount() {
+  //   console.log('port will unmount');
+  //   this.setState({ mounting: false });
+  // }
+
+  render() {
+    return (
+      <div className='portfolio-container page'>
+        <div className='portfolio-container__project-boxes-container'>
+          <div className='portfolio-container__project-boxes-container__project-boxes'>
+            <ProjectBox
+              img={imgs.taskerImg}
+              webpImg={imgs.webpImgs.taskerImgWebp}
+              siteUrl={specificLinks.reactTodoSite}
+              githubUrl={specificLinks.reactTodoGithub}
+              backendGithubUrl={specificLinks.reactTodoGithubBackend}
+              techUsedProps={reactTodoTechUsedProps}
+              projectText={'Full-stack MERN app with basic CRUD operations.'}
+              projectName='Tasker'
+            />
+            <ProjectBox
+              projectClass={`project-1-container`}
+              img={imgs.movieSearchImg}
+              webpImg={imgs.webpImgs.movieSearchImgWebp}
+              siteUrl={specificLinks.movieSearchSite}
+              githubUrl={specificLinks.movieSearchGithub}
+              techUsedProps={movieSearchTechUsedProps}
+              projectText={
+                'SPA application that presents more specific data for searched movie.'
+              }
+              projectName='Movie Searcher'
+            />
+            <ProjectBox
+              img={imgs.fccPortfolioImg}
+              webpImg={imgs.webpImgs.fccPortfolioImgWebp}
+              siteUrl={specificLinks.fccPortfolioSite}
+              githubUrl={specificLinks.fccPortfolioGithub}
+              techUsedProps={fccPortfolioTechUsedProps}
+              projectText={'Personal portfolio of mine. This one.'}
+              projectName='Portfolio'
+            />
+            <ProjectBox
+              img={imgs.smartBrainImg}
+              webpImg={imgs.webpImgs.smartBrainImgWebp}
+              siteUrl={specificLinks.smartBrainSite}
+              githubUrl={specificLinks.smartBrainGithub}
+              backendGithubUrl={specificLinks.smartBrainGithubBackend}
+              techUsedProps={smartBrainTechUsedProps}
+              projectText={'Full-stack face recognition application.'}
+              projectName='Smart Brain'
+            />
+            <ProjectBox
+              img={imgs.quoteMachineImg}
+              webpImg={imgs.webpImgs.quoteMachineImgWebp}
+              siteUrl={specificLinks.quoteMachineSite}
+              githubUrl={specificLinks.quoteMachineGithub}
+              techUsedProps={quoteMachineTechUsedProps}
+              projectText={
+                'Uses goodreads API to fetch quotes based on user input.'
+              }
+              projectName='Quote Machine'
+            />
+            <ProjectBox
+              img={imgs.githubCardImg}
+              webpImg={imgs.webpImgs.githubCardImgWebp}
+              siteUrl={specificLinks.githubCardSite}
+              githubUrl={specificLinks.githubCardGithub}
+              techUsedProps={githubCardTechUsedProps}
+              projectText={
+                'Displays searched github user info by fetching github API data.'
+              }
+              projectName='Github Card'
+            />
+          </div>
         </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Portfolio;

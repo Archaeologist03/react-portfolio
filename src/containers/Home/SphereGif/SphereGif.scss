@@ -21,13 +21,17 @@
   &:hover &__header .name-span::after {
     border-bottom: 2px solid white;
     display: block;
-    content: "";
+    content: '';
     transform: scaleX(0.75);
     transition: transform 1s ease-in-out;
   }
 
-  @media screen and (max-width: 321px) {
-    top: 20%;
+  @media screen and (max-width: 361px) {
+    top: 17%;
+  }
+
+  @media screen and (max-width: 660px) and (max-height: 300px) {
+    display: none;
   }
 
   img {
@@ -71,7 +75,7 @@
     }
 
     .name-span::after {
-      content: "";
+      content: '';
       display: block;
       border-bottom: 2px solid transparent;
       transform: scaleX(0);

@@ -27,14 +27,14 @@ function AboutMyself() {
         But he also has great amount of curiosity towards{" "}
         <span className="about-myself-container__text--bolded">Python</span>. 
         <br /> */}
-        <br />I am a front-end developer, mainly working with{' '}
+        <br />-I am a front-end developer, mainly working with{' '}
         <span className='about-myself-container__text--bolded'>
           Javascript(React){' '}
         </span>
         and <span className='about-myself-container__text--bolded'>Sass</span>{' '}
         on frontend.
         <br />
-        I'm also highly interested in backend development and currently
+        -I'm also highly interested in backend development and currently
         expanding my knowledge towards backend technologies such as{' '}
         <span className='about-myself-container__text--bolded'>
           NodeJS(Express){' '}

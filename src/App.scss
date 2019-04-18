@@ -1,17 +1,18 @@
 .app-container {
 }
 
-
 // ----position has to be fixed - adds scrolling on absolute----
 .page {
   height: 100vh;
+  max-height: 100vh;
   padding-top: 100px;
   // padding-bottom: 400px;
   position: fixed;
   top: 0;
   width: 100%;
+  max-width: 100%;
   transition: 1s ease-in-out;
-  // border: 5px solid gold;
+  overflow: hidden;
 
   @media only screen and (max-width: 468px) {
     padding-top: 80px;
@@ -19,7 +20,7 @@
 }
 
 .page-enter {
-  transform: translateY(100%) scale(0.1);
+  transform: translateY(100%) scale(0);
   opacity: 0;
   // transition: transform 1s, opacity 3s;
 }

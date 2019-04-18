@@ -2,7 +2,7 @@ import React from "react";
 
 import "./SphereGif.scss";
 
-import SphereGifImg from "../../../static/assets/images/sphere-gif.gif";
+// import SphereGifImg from "../../../static/assets/images/sphere-gif.gif";
 
 function SphereGif() {
   return (

@@ -1,17 +1,26 @@
 .home-container {
   z-index: -1;
 
+  // &__sphere-container {
+  //   border: 2px solid red;
+
+  //   @media screen and (max-width: 376px) {
+  //   }
+  // }
+
   &__skills-container {
     position: absolute;
-    bottom: 15%;
+    bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
     width: 70%;
 
-
-
     @media screen and (max-width: 376px) {
-      bottom: 17%;
+      bottom: 23.5%;
+    }
+
+    @media screen and (max-width: 660px) and (max-height: 300px) {
+      bottom: 35%;
     }
   }
 }

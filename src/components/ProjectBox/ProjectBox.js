@@ -11,7 +11,7 @@ import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 
 function ProjectBox(props) {
   return (
-    <div className='project-box-container'>
+    <div className={`project-box-container`}>
       <div className='project-box-container__tech-used-container'>
         <TechUsed techUsedProps={props.techUsedProps} size={'4x'} />
       </div>
