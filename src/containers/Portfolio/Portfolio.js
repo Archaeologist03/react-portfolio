@@ -102,8 +102,8 @@ class Portfolio extends React.Component {
             <ProjectBox
               img={imgs.fccPortfolioImg}
               webpImg={imgs.webpImgs.fccPortfolioImgWebp}
-              siteUrl={specificLinks.fccPortfolioSite}
-              githubUrl={specificLinks.fccPortfolioGithub}
+              siteUrl={specificLinks.portfolioSite}
+              githubUrl={specificLinks.portfolioGithub}
               techUsedProps={fccPortfolioTechUsedProps}
               projectText={'Personal portfolio of mine. This one.'}
               projectName='Portfolio'

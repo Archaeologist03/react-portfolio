@@ -16,8 +16,8 @@ const movieSearchSite = 'https://movie-search-react.netlify.com/';
 const movieSearchGithub =
   'https://github.com/Archaeologist03/react-movie-search';
 
-const fccPortfolioSite = 'https://ilija.netlify.com';
-const fccPortfolioGithub = 'https://github.com/Archaeologist03/Fcc-Portfolio';
+const portfolioSite = 'https://ilija03.netlify.com';
+const portfolioGithub = 'https://github.com/Archaeologist03/react-portfolio';
 
 const githubCardSite = 'https://archaeologist03.github.io/react-github-card/';
 const githubCardGithub = 'https://github.com/Archaeologist03/react-github-card';
@@ -39,8 +39,8 @@ const quoteMachineGithub =
 const specificLinks = {
   movieSearchSite,
   movieSearchGithub,
-  fccPortfolioSite,
-  fccPortfolioGithub,
+  portfolioSite,
+  portfolioGithub,
   githubCardSite,
   githubCardGithub,
   reactTodoSite,
