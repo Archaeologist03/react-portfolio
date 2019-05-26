@@ -4,8 +4,11 @@
 
 ## Setting up:
 
-##### `git clone https://github.com/Archaeologist03/react-portfolio`
+##### 1) Clone repo:
+`git clone https://github.com/Archaeologist03/react-portfolio.git`
 
-##### `npm install`
+##### 2) Install needed packages
+`npm install`
 
-##### `npm start`
+##### 3) Start app(dev)
+`npm start`
