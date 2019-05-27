@@ -27,7 +27,6 @@ import Navigation from './components/Navigation/Navigation';
 
 export class App extends Component {
   render() {
-    console.log('rendered app');
 
     return (
       <Router >
