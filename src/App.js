@@ -1,5 +1,5 @@
 // =========== REACT IMPORTS ===============
-import React, { Component } from 'react';
+import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
@@ -24,41 +24,36 @@ import Navigation from './components/Navigation/Navigation';
 
 // const supportsHistory = 'pushState' in window.history;
 
+function App() {
+  return (
+    <Router>
+      <div className='app-container'>
+        <Logo />
+        <Background img={backgroundImg} />
+        <Footer />
+        <Navigation />
 
-export class App extends Component {
-  render() {
+        <Route
+          render={({ location }) => (
+            <TransitionGroup>
+              <CSSTransition
+                key={location.pathname}
+                timeout={1000}
+                classNames='page'>
+                <Switch location={location}>
+                  <Route exact path='/' component={Home} />
+                  <Route path='/portfolio' component={Portfolio} />
+                  <Route path='/about' component={About} />
+                </Switch>
+              </CSSTransition>
+            </TransitionGroup>
+          )}
+        />
 
-    return (
-      <Router >
-        <div className="app-container">
-          <Logo />
-          <Background img={backgroundImg} />
-          <Footer />
-          <Navigation />
-
-          <Route
-            render={({ location }) => (
-              <TransitionGroup>
-                <CSSTransition
-                  key={location.pathname}
-                  timeout={1000}
-                  classNames="page">
-                  <Switch location={location}>
-                    <Route exact path="/" component={Home} />
-                    <Route path="/portfolio" component={Portfolio} />
-                    <Route path="/about" component={About} />
-                  </Switch>
-                </CSSTransition>
-              </TransitionGroup>
-            )}
-          />
-
-          {/* <h1>If your feet got cemented, make concrete move!</h1> */}
-        </div>
-      </Router>
-    );
-  }
+        {/* <h1>If your feet got cemented, make concrete move!</h1> */}
+      </div>
+    </Router>
+  );
 }
-
 
 export default App;

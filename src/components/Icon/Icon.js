@@ -13,11 +13,14 @@ function Icon(props) {
         target='_blank'
         rel='noopener noreferrer'>
         {props.iconImg ? (
-          <img
-            className='icon-container__iconImage image'
-            src={props.iconImg}
-            alt=''
-          />
+          <picture>
+            <source srcSet={props.iconImg.webp} type='image/webp' />
+            <img
+              className='icon-container__iconImage image'
+              src={props.iconImg.png}
+              alt=''
+            />
+          </picture>
         ) : (
           <FontAwesomeIcon
             className={`icon-container__iconImage icon ${props.whichIcon}`}

@@ -6,34 +6,34 @@ import Icon from '../Icon/Icon';
 
 // ======= Links & icons(images) ========
 import { links } from '../../utils/links';
+
+import imgs from '../../utils/imgImports';
+
 import { faGithubSquare } from '@fortawesome/free-brands-svg-icons';
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faFreeCodeCamp } from '@fortawesome/free-brands-svg-icons';
-import codewarsIcon from '../../static/assets/images/codewars-icon.png';
-
 
 function Footer() {
   return (
-    <div className="footer-container">
+    <div className='footer-container'>
       <Icon
-        whichIcon="github-icon"
+        whichIcon='github-icon'
         linkUrl={links.github}
         faIcon={faGithubSquare}
       />
       <Icon
-        whichIcon="linkedin-icon"
+        whichIcon='linkedin-icon'
         linkUrl={links.linkedin}
         faIcon={faLinkedin}
       />
-      <Icon 
-        whichIcon="fcc-icon" 
-        linkUrl={links.fcc} 
-        faIcon={faFreeCodeCamp} 
-      />
+      <Icon whichIcon='fcc-icon' linkUrl={links.fcc} faIcon={faFreeCodeCamp} />
       <Icon
-        whichIcon="codewars-icon"
+        whichIcon='codewars-icon'
         linkUrl={links.codewars}
-        iconImg={codewarsIcon}
+        iconImg={{
+          png: imgs.codewarsIcon,
+          webp: imgs.webpImgs.codewarsIconWebp,
+        }}
       />
     </div>
   );

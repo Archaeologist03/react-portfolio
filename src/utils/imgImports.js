@@ -7,6 +7,7 @@ import githubCardImg from '../static/assets/images/github-card-react.png';
 import quoteMachineImg from '../static/assets/images/quote-machine.jpg';
 import smartBrainImg from '../static/assets/images/smart-brain.jpg';
 import taskerImg from '../static/assets/images/tasker.jpg';
+import codewarsIcon from '../static/assets/images/codewars-icon.png';
 
 // WebP images
 import logoWebp from '../static/assets/images/webp/logo.webp';
@@ -16,6 +17,7 @@ import githubCardImgWebp from '../static/assets/images/webp/github-card-react.we
 import quoteMachineImgWebp from '../static/assets/images/webp/quote-machine.webp';
 import smartBrainImgWebp from '../static/assets/images/webp/smart-brain.webp';
 import taskerImgWebp from '../static/assets/images/webp/tasker.webp';
+import codewarsIconWebp from '../static/assets/images/webp/codewars-icon.webp';
 
 const imgs = {
   logo,
@@ -25,6 +27,7 @@ const imgs = {
   quoteMachineImg,
   smartBrainImg,
   taskerImg,
+  codewarsIcon,
   webpImgs: {
     logoWebp,
     movieSearchImgWebp,
@@ -33,6 +36,7 @@ const imgs = {
     quoteMachineImgWebp,
     smartBrainImgWebp,
     taskerImgWebp,
+    codewarsIconWebp,
   },
 };
 
