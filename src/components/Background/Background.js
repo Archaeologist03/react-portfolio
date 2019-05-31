@@ -12,8 +12,8 @@ function Background(props) {
     <div className='background-container'>
       <picture>
         <source
-          // srcSet={backgroundHeaderWebp}
-          srcSet='https://doc-0k-9s-docs.googleusercontent.com/docs/securesc/a4at6strlb6gqumafl3667uv4flrcv7g/v9df9tr63m3t4np9rc4aa6vpe2hi0ael/1559311200000/15700540241231460852/15700540241231460852/1tC7b3zHd5BcDu9AjmtCyHWfNLjH_LBfP?e=view'
+          srcSet={backgroundHeaderWebp}
+          // srcSet='https://doc-0k-9s-docs.googleusercontent.com/docs/securesc/a4at6strlb6gqumafl3667uv4flrcv7g/v9df9tr63m3t4np9rc4aa6vpe2hi0ael/1559311200000/15700540241231460852/15700540241231460852/1tC7b3zHd5BcDu9AjmtCyHWfNLjH_LBfP?e=view'
           // media={'(min-width: 568px)'}
           type='image/webp'
         />
