@@ -7,7 +7,7 @@ import './Background.scss';
 // import Particles from './ParticlesBG/ParticlesBG';
 // import SphereGif from '../../containers/Home/SphereGif/SphereGif';
 
-function Background(props) {
+function Background() {
   return (
     <div className='background-container'>
       <picture>
@@ -34,4 +34,3 @@ function Background(props) {
 }
 
 export default Background;
-// 1tC7b3zHd5BcDu9AjmtCyHWfNLjH_LBfP

@@ -19,6 +19,10 @@ import {
 } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 
+// const ProjectBox = React.lazy(() =>
+//   import('../../components/ProjectBox/ProjectBox'),
+// );
+
 // ==== PROJECT ICONS / USED TECH ====
 const movieSearchTechUsedProps = {
   icons: [faReact, faSass],
@@ -55,6 +59,7 @@ function Portfolio(props) {
     <div className='portfolio-container page'>
       <div className='portfolio-container__project-boxes-container'>
         <div className='portfolio-container__project-boxes-container__project-boxes'>
+          {/* <React.Suspense fallback={<div>Loading...</div>}> */}
           <ProjectBox
             img={imgs.taskerImg}
             webpImg={imgs.webpImgs.taskerImgWebp}
@@ -118,6 +123,7 @@ function Portfolio(props) {
             }
             projectName='Github Card'
           />
+          {/* </React.Suspense> */}
         </div>
       </div>
     </div>

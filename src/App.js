@@ -1,7 +1,6 @@
 // =========== REACT IMPORTS ===============
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 // =========== STYLES ======================
@@ -22,16 +21,24 @@ import Portfolio from './containers/Portfolio/Portfolio';
 import About from './containers/About/About';
 import Navigation from './components/Navigation/Navigation';
 
-// const supportsHistory = 'pushState' in window.history;
+// =========== MEMO-ing COMPONENTS ==========
+const MemoBackground = React.memo(Background);
+const MemoLogo = React.memo(Logo);
+const MemoNav = React.memo(Navigation);
+const MemoFooter = React.memo(Footer);
+
+const MemoHome = React.memo(Home);
+const MemoPortfolio = React.memo(Portfolio);
+const MemoAbout = React.memo(About);
 
 function App() {
   return (
     <Router>
       <div className='app-container'>
-        <Logo />
-        <Background img={backgroundImg} />
-        <Footer />
-        <Navigation />
+        <MemoLogo />
+        <MemoBackground img={backgroundImg} />
+        <MemoFooter />
+        <MemoNav />
 
         <Route
           render={({ location }) => (
@@ -41,9 +48,12 @@ function App() {
                 timeout={1000}
                 classNames='page'>
                 <Switch location={location}>
-                  <Route exact path='/' component={Home} />
-                  <Route path='/portfolio' component={Portfolio} />
-                  <Route path='/about' component={About} />
+                  <Route exact path='/' component={() => <MemoHome />} />
+                  <Route
+                    path='/portfolio'
+                    component={() => <MemoPortfolio />}
+                  />
+                  <Route path='/about' component={() => <MemoAbout />} />
                 </Switch>
               </CSSTransition>
             </TransitionGroup>
