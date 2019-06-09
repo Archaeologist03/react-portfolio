@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
 // =========== STYLES ======================
+import './layout/global.scss';
 import './App.scss';
 
 // =========== STATIC IMPORTS ==============

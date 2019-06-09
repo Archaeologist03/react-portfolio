@@ -3,10 +3,10 @@ import logo from '../static/assets/images/logo.png';
 // Regular images
 import movieSearchImg from '../static/assets/images/movie-search-react.png';
 import fccPortfolioImg from '../static/assets/images/fcc-portfolio.png';
-import githubCardImg from '../static/assets/images/github-card-react.png';
 import quoteMachineImg from '../static/assets/images/quote-machine.jpg';
 import smartBrainImg from '../static/assets/images/smart-brain.jpg';
 import taskerImg from '../static/assets/images/tasker.jpg';
+import githubCardImg from '../static/assets/images/github-card-react.jpg';
 import codewarsIcon from '../static/assets/images/codewars-icon.png';
 
 // WebP images
