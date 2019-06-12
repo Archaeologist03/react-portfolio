@@ -9,6 +9,7 @@ function Icon(props) {
     <div className='icon-container'>
       <a
         className={`icon-container__link ${props.iconImg ? 'image-link' : ''}`}
+        aria-label={props.whichIcon}
         href={props.linkUrl}
         target='_blank'
         rel='noopener noreferrer'>
@@ -17,6 +18,7 @@ function Icon(props) {
             <source srcSet={props.iconImg.webp} type='image/webp' />
             <img
               className='icon-container__iconImage image'
+              aria-label={props.whichIcon}
               src={props.iconImg.png}
               alt=''
             />
