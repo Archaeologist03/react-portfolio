@@ -22,7 +22,7 @@ function Footer() {
         faIcon={faGithubSquare}
       />
       <Icon
-        whichIcon='linkedin-icon'
+        whichIcon='linkedIn-icon'
         linkUrl={links.linkedin}
         faIcon={faLinkedin}
       />
