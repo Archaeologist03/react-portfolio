@@ -16,7 +16,7 @@ const movieSearchSite = 'https://movie-search-react.netlify.com/';
 const movieSearchGithub =
   'https://github.com/Archaeologist03/react-movie-search';
 
-const portfolioSite = 'https://ilija03.netlify.com';
+const portfolioSite = 'https://ilija03.tk';
 const portfolioGithub = 'https://github.com/Archaeologist03/react-portfolio';
 
 const githubCardSite = 'https://archaeologist03.github.io/react-github-card/';
@@ -36,6 +36,12 @@ const quoteMachineSite = 'https://archaeologist03.github.io/fcc-quote-machine/';
 const quoteMachineGithub =
   'https://github.com/Archaeologist03/fcc-quote-machine';
 
+const devConnectorSite = 'https://dev-connector-ilija.herokuapp.com/';
+const devConnectorGithub = 'https://github.com/Archaeologist03/dev-connector'
+
+const nasaExplorerSite = 'https://nasa-explorer.netlify.com/';
+const nasaExplorerGithub = 'https://github.com/Archaeologist03/nasa-react'
+
 const specificLinks = {
   movieSearchSite,
   movieSearchGithub,
@@ -51,6 +57,10 @@ const specificLinks = {
   smartBrainGithubBackend,
   quoteMachineSite,
   quoteMachineGithub,
+  devConnectorSite,
+  devConnectorGithub,
+  nasaExplorerSite,
+  nasaExplorerGithub,
 };
 
 export { links, specificLinks };
