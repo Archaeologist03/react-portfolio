@@ -13,10 +13,11 @@ function Learning() {
 				<li>- JavaScript (ES6+)</li>
 				<li>- React</li>
 				<li>- Redux</li>
+				<li>- Jest</li>
 				<li>- NodeJS (Express)</li>
 				<li>- MongoDB (Mongoose)</li>
-				<li>- CSS (SCSS)</li>
-				<li>- HTML</li>
+				<li>- CSS3 (SCSS)</li>
+				<li>- HTML5</li>
 				<li>- Git</li>
 			</ul>
 			<div />

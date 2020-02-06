@@ -15,7 +15,7 @@ import {
 	faSass,
 	faCss3,
 	faJs,
-  faNodeJs,
+	faNodeJs,
 } from '@fortawesome/free-brands-svg-icons';
 import { faDatabase } from '@fortawesome/free-solid-svg-icons';
 
@@ -98,7 +98,7 @@ function Portfolio() {
 						githubUrl={specificLinks.devConnectorGithub}
 						techUsedProps={devConnectorTechUsedProps}
 						projectText={
-							'MERN that has helps developers make connections with other developers.'
+							'Helps developers to make connections with other developers.'
 						}
 						projectName='Dev-Connector'
 					/>
