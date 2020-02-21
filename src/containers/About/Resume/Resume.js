@@ -1,21 +1,29 @@
 import React from 'react';
-
-import './Resume.scss';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faScroll } from '@fortawesome/free-solid-svg-icons';
 
+import Tooltip from '../../../components/Tooltip/Tooltip';
+
+import './Resume.scss';
+
 function Resume() {
 	return (
-		<div className='resume-container'>
-			<a
-				className='resume-container__link'
-				href='https://drive.google.com/open?id=16vjkVhoFuoXXgGUEeyIato5I1Wm5CpwL'
-				target='_blank'
-				rel='noopener noreferrer'>
-				<FontAwesomeIcon icon={faScroll} />
-			</a>
-		</div>
+		<Tooltip
+			tooltipText='Resume'
+			style={{
+				color: 'rgba(231, 255, 14, 0.911)',
+				textShadow: '2px 2px rgba(192, 62, 224, 0.133)',
+			}}>
+			<div className='resume-container'>
+				<a
+					className='resume-container__link'
+					href='https://drive.google.com/open?id=16vjkVhoFuoXXgGUEeyIato5I1Wm5CpwL'
+					target='_blank'
+					rel='noopener noreferrer'>
+					<FontAwesomeIcon icon={faScroll} />
+				</a>
+			</div>
+		</Tooltip>
 	);
 }
 
