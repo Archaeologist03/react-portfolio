@@ -17,7 +17,7 @@ function Resume() {
 			<div className='resume-container'>
 				<a
 					className='resume-container__link'
-					href='https://drive.google.com/open?id=16vjkVhoFuoXXgGUEeyIato5I1Wm5CpwL'
+					href='https://drive.google.com/file/d/1wVYdlp89wxWMO9wrjBcqamt-K8YK7pnv/view'
 					target='_blank'
 					rel='noopener noreferrer'>
 					<FontAwesomeIcon icon={faScroll} />
