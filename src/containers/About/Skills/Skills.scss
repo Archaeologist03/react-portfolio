@@ -1,0 +1,19 @@
+.skills-container {
+	color: burlywood;
+
+	.skills-title {
+		color: rgb(230, 78, 41);
+		font-weight: bold;
+		font-size: 2.3rem;
+		margin-left: 30px;
+		margin-bottom: -10px;
+	}
+
+	&__skills-list {
+		li {
+			font-weight: 700;
+			color: rgb(216, 168, 37);
+			list-style: none;
+		}
+	}
+}

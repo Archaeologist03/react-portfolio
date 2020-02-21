@@ -1,47 +1,40 @@
 @import '../../../scss/abstracts/variables';
 
 .tech-used-container {
-  // border: 2px dashed red;
-  // display: inline-block;
-  // position: absolute;
-  // top: 0;
-  // right: 3%;
+	&__icons {
+		display: inline-block;
+		color: red;
 
-  &__icons {
-    // border: 2px solid green;
-    display: inline-block;
-    color: red;
+		&:not(:last-child) {
+			margin-right: 10px;
+		}
+	}
 
-    &:not(:last-child) {
-      margin-right: 10px;
-    }
-  }
+	.react {
+		color: $react-color;
+	}
 
-  .react {
-    color: $react-color;
-  }
+	.sass {
+		color: $sass-color;
+	}
 
-  .sass {
-    color: $sass-color;
-  }
+	.css {
+		color: $css-color;
+	}
 
-  .css {
-    color: $css-color
-  }
+	.javascript {
+		color: $javascript-color;
+	}
 
-  .javascript {
-    color: $javascript-color;
-  }
+	.node {
+		color: $node-color;
+	}
 
-  .node {
-    color: $node-color;
-  }
+	.mongodb {
+		color: rgb(18, 155, 6);
+	}
 
-  .mongodb {
-    color: rgb(18, 155, 6);
-  }
-
-  .postgres {
-    color: rgb(3, 81, 184)
-  }
+	.postgres {
+		color: rgb(3, 81, 184);
+	}
 }

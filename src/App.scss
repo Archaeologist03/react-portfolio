@@ -1,53 +1,28 @@
-.app-container {
-}
-
 // ----position has to be fixed - adds scrolling on absolute----
 .page {
-  height: 100vh;
-  max-height: 100vh;
-  padding-top: 100px;
-  // padding-bottom: 400px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  max-width: 100%;
-  transition: 1s ease-in-out;
-  overflow: hidden;
+	height: 100vh;
+	max-height: 100vh;
+	padding-top: 100px;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	max-width: 100%;
+	transition: 1s ease-in-out;
+	overflow: hidden;
 
-  @media only screen and (max-width: 468px) {
-    padding-top: 80px;
-  }
+	@media only screen and (max-width: 468px) {
+		padding-top: 80px;
+	}
 }
 
 .page-enter {
-  transform: translateY(100%) scale(0);
-  // opacity: 0;
-  // transition: transform 1s, opacity 3s;
+	transform: translateY(100%) scale(0);
 }
 
 .page-enter-active {
-  transform: translateY(0) scale(1);
-  // opacity: 1;
-  // transition: 2s cubic-bezier(0.4, 1.25, 0.52, -0.27);
+	transform: translateY(0) scale(1);
 }
 
 .page-exit {
-  transform: translateX(100%) scale(0);
-  // opacity: 0.01;
-  // transition: transform 1s, opacity 0.3s;
-  // transition: 1s cubic-bezier(0.4, 1.25, 0.52, -0.27);
+	transform: translateX(100%) scale(0);
 }
-
-// .page--prev.page-enter {
-//   transform: translate(-100%, 25%) scale(1);
-// }
-
-// .page--prev.page-enter-active {
-//   transform: translateY(0) scale(1);
-//   opacity: 1;
-// }
-
-// .page--prev.page-exit {
-//   transform: translate(100%, 25%) scale(0);
-//   opacity: 0;
-// }

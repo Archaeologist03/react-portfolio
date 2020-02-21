@@ -11,7 +11,7 @@ function SphereGif() {
       <div className="sphere-gif-container__overlay" /> */}
 			<h1 className='sphere-gif-container__header'>
 				<span className='name-span'> Ilija Savic</span>
-				<pan className='position-span'>JavaScript Developer</pan>
+				<span className='position-span'>JavaScript Developer</span>
 			</h1>
 		</div>
 	);

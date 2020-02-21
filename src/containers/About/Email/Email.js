@@ -4,9 +4,9 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 import Tooltip from '../../../components/Tooltip/Tooltip';
 
-import './ContactInfo.scss';
+import './Email.scss';
 
-function ContactInfo() {
+function Email() {
 	return (
 		<Tooltip
 			tooltipText='Email'
@@ -27,4 +27,4 @@ function ContactInfo() {
 	);
 }
 
-export default ContactInfo;
+export default Email;

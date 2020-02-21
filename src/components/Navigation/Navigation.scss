@@ -1,35 +1,32 @@
 .navigation-container {
-  position: fixed;
-  top: 1%;
-  right: 1%;
-  width: 65%;
-  perspective: 85rem;
-  perspective-origin: right;
-  z-index: 2;
+	position: fixed;
+	top: 1%;
+	right: 1%;
+	width: 65%;
+	perspective: 85rem;
+	perspective-origin: right;
+	z-index: 2;
 
+	@media screen and (max-width: 325px) {
+		width: 75%;
+	}
 
-  @media screen and (max-width: 325px) {
-    width: 75%;
-  }
-  
-  @media screen and (max-width: 275px) {
-    width: 80%;
-  }
+	@media screen and (max-width: 275px) {
+		width: 80%;
+	}
 
+	&__nav-items-container {
+		margin-top: 0.3rem;
+		transform: rotateY(-7deg);
 
+		:not(:first-child) {
+			margin-right: 0.4rem;
+		}
 
-  &__nav-items-container {
-    margin-top: 0.3rem;
-    transform: rotateY(-7deg);
-
-    :not(:first-child) {
-      margin-right: 0.4rem;
-    }
-
-    &::after {
-      content: "";
-      clear: both;
-      display: table;
-    }
-  }
+		&::after {
+			content: '';
+			clear: both;
+			display: table;
+		}
+	}
 }

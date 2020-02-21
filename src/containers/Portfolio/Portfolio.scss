@@ -1,77 +1,64 @@
 .portfolio-container {
-  // border: 5px dashed gray;
+	@media screen and (max-width: 321px) {
+		padding-top: 85px;
+	}
 
-  @media screen and (max-width: 321px) {
-    padding-top: 85px;
-  }
+	@media screen and (min-width: 1100px) {
+		padding-top: 125px;
+	}
 
-  @media screen and (min-width: 1100px) {
-    padding-top: 125px;
-  }
+	&__project-boxes-container {
+		box-shadow: 0 0 35px;
+		border-radius: 3%;
+		height: 60vh;
+		max-height: 65vh;
+		width: 85%;
+		max-width: 95%;
+		margin: 0 auto;
+		overflow: hidden;
+		overflow-y: auto;
+		border-bottom: 2px solid rgba(199, 15, 174, 0.288);
+		border-top: 2px solid rgba(199, 15, 174, 0.329);
+		box-shadow: 0px -15px 50px rgba(170, 9, 76, 0.466),
+			0px 10px 40px rgba(170, 9, 76, 0.219);
+		padding: 5px 0;
 
-  &__project-boxes-container {
-    // border: 5px dashed pink;
-    box-shadow: 0 0 35px;
-    border-radius: 3%;
-    height: 60vh;
-    max-height: 65vh;
-    width: 85%;
-    max-width: 95%;
-    margin: 0 auto;
-    overflow: hidden;
-    overflow-y: auto;
-    border-bottom: 2px solid rgba(199, 15, 174, 0.288);
-    border-top: 2px solid rgba(199, 15, 174, 0.329);
-    box-shadow: 0px -15px 50px rgba(170, 9, 76, 0.466),
-      0px 10px 40px rgba(170, 9, 76, 0.219);
-    padding: 5px 0;
+		@media screen and (min-width: 1100px) {
+			height: 70vh;
+			max-height: 70vh;
+			width: 55%;
+		}
 
-    @media screen and (min-width: 1100px) {
-      height: 70vh;
-      max-height: 70vh;
-      width: 55%;
-    }
+		@media screen and (min-width: 1100px) and (max-height: 600px) {
+			height: 55vh;
+			max-height: 70vh;
+			width: 55%;
+		}
 
-    @media screen and (min-width: 1100px) and (max-height: 600px) {
-      height: 55vh;
-      max-height: 70vh;
-      width: 55%;
-    }
+		@media screen and (max-width: 660px) and (max-height: 300px) {
+			margin-top: -25px;
+			height: 50vh;
+			max-height: 70vh;
+			width: 80%;
+		}
 
-    @media screen and (max-width: 660px) and (max-height: 300px) {
-      margin-top: -25px;
-      height: 50vh;
-      max-height: 70vh;
-      width: 80%;
-    }
-
-    // Barely seeable border prevents img oveflow out of outer container
-    &__project-boxes {
-      border: 2px dashed rgba(0, 128, 0, 0.103);
-      border-radius: 3%;
-      // height: 100%;
-      // max-width: 100%;
-      overflow: hidden;
-    }
-  }
+		// Barely seeable border prevents img oveflow out of outer container
+		&__project-boxes {
+			border: 2px dashed rgba(0, 128, 0, 0.103);
+			border-radius: 3%;
+			overflow: hidden;
+		}
+	}
 }
 
 .show-project {
-  opacity: 1;
-  transition: 1s;
+	opacity: 1;
+	transition: 1s;
 }
 
 .hide-project {
-  opacity: 0.3;
-  transition: 1s;
+	opacity: 0.3;
+	transition: 1s;
 }
-
-// .project-1-container {
-//   // width: 33%;
-//   border: 2px solid red;
-//   opacity: 0.5;
-
-//   transition: 1s;
-// }
 
 // Add another container for everthing that will have border-radius and overflow to hidden, while most outer container does have overflow-y to scroll.
