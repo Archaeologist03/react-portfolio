@@ -11,8 +11,10 @@
 	overflow: hidden;
 	border-radius: 3%;
 	backface-visibility: hidden;
-	border-bottom: 2px solid rgba(0, 128, 0, 0.589);
+	border-bottom: 2px solid rgba(255, 0, 191, 0.164);
 	margin-bottom: 12%;
+	box-shadow: 0px 2px 6px rgba(255, 0, 191, 0.096);
+	box-sizing: content-box;
 
 	&:last-child {
 		margin-bottom: 0%;
