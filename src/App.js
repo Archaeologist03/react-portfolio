@@ -17,10 +17,12 @@ import './layout/global.scss';
 import Background from './components/Background/Background';
 import Footer from './components/Footer/Footer';
 import Logo from './components/Logo/Logo';
-import Home from './containers/Home/Home';
-import Portfolio from './containers/Portfolio/Portfolio';
-import About from './containers/About/About';
 import Navigation from './components/Navigation/Navigation';
+
+// =========== PAGES ========================
+import Home from './pages/Home/Home';
+import Portfolio from './pages/Portfolio/Portfolio';
+import About from './pages/About/About';
 
 // =========== MEMO-ing COMPONENTS ==========
 const MemoBackground = React.memo(Background);
@@ -33,38 +35,36 @@ const MemoPortfolio = React.memo(Portfolio);
 const MemoAbout = React.memo(About);
 
 function App() {
-  return (
-    <Router>
-      <div className='app-container'>
-        <MemoLogo />
-        <MemoBackground img={backgroundImg} />
-        <MemoFooter />
-        <MemoNav />
+	return (
+		<Router>
+			<div className='app-container'>
+				<MemoLogo />
+				<MemoBackground img={backgroundImg} />
+				<MemoFooter />
+				<MemoNav />
 
-        <Route
-          render={({ location }) => (
-            <TransitionGroup>
-              <CSSTransition
-                key={location.pathname}
-                timeout={1000}
-                classNames='page'>
-                <Switch location={location}>
-                  <Route exact path='/' component={() => <MemoHome />} />
-                  <Route
-                    path='/portfolio'
-                    component={() => <MemoPortfolio />}
-                  />
-                  <Route path='/about' component={() => <MemoAbout />} />
-                </Switch>
-              </CSSTransition>
-            </TransitionGroup>
-          )}
-        />
-
-        {/* <h1>If your feet got cemented, make concrete move!</h1> */}
-      </div>
-    </Router>
-  );
+				<Route
+					render={({ location }) => (
+						<TransitionGroup>
+							<CSSTransition
+								key={location.pathname}
+								timeout={1000}
+								classNames='page'>
+								<Switch location={location}>
+									<Route exact path='/' component={() => <MemoHome />} />
+									<Route
+										path='/portfolio'
+										component={() => <MemoPortfolio />}
+									/>
+									<Route path='/about' component={() => <MemoAbout />} />
+								</Switch>
+							</CSSTransition>
+						</TransitionGroup>
+					)}
+				/>
+			</div>
+		</Router>
+	);
 }
 
 export default App;
